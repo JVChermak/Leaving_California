@@ -1,4 +1,4 @@
- [![news](/pics/header.png)](/vids/News_vid.mp4?raw=true)  
+ [![news](/pics/header.png)](/clip/News_vid.mp4?raw=true)  
  
 #### Table of Contents  
 
@@ -62,28 +62,34 @@ Full article can be found at [abc10.com](https://www.abc10.com/article/news/loca
 **Reason the topic was selected**  
 There are many articles written, like this one, about Califorian's leaving due to the high cost of living. The reason this topic was selected, with our group living in California, it's personal.  
 
-As a broad generalization, most people can afford to purchase a house worth about three times their total (gross) annual income, assuming a 20% down payment and a moderate amount of other long-term debts, such as car or student loan payments. This best practice can be found at [mymoneyblog.com](https://www.mymoneyblog.com/4-different-rules-of-thumb-for-how-much-house-you-can-afford.html). As there are many similar "Best Practices" in home buying, We would like to keep a consistancy throughout the analysis and use this one, three times total annual income.  
+As a broad generalization, most people can afford to purchase a house worth about three times their total (gross) annual income, assuming a 20% down payment and a moderate amount of other long-term debts, such as car or student loan payments. This best practice can be found at [mymoneyblog.com](https://www.mymoneyblog.com/4-different-rules-of-thumb-for-how-much-house-you-can-afford.html). As there are many similar "Best Practices" in home buying, We would like to keep a consistancy throughout the analysis and use this one, three times total annual income. The consistancy will make the analysis meaningful. 
 
 With the best pracice in mind and the median price of homes currently listed in San Bernardino County is $350,000, according to [zillow.com](https://www.zillow.com/san-bernardino-county-ca/home-values/), a single gross income of **$116,666.67** would be needed to purchase a **median price** home in **San Bernardino County**.  
 
 Although, that number is flabbergasting enough, it fails when compared to surrounding California counties.These counties the median home prices are, easily, doubled.  Meaning, the gross annual income would, also, have to double.  
-Pricing can be seen on [laalmanac.com](http://www.laalmanac.com/economy/ec37.php)
+Pricing can be seen on [laalmanac.com](http://www.laalmanac.com/economy/ec37.php)  
+
+**Description of the source of data**  
+All .csv resources for our analysis were downloaded from [data.census.gov](https://data.census.gov)
 
 **Questions the team hopes to answer with the data**  
-We would like to perform analysis on the cost of living in our counties in California that included:  
+We would like to perform analysis on the cost of housing in California that included:  
 
 - Median Home Price
 - Median Household Income  
   
-With the different counties we live in California being the targeted data, we wanted to compare another states county for further analysis; Spring Hill, Tennessee. Questions the team hopes to answer with the data is:  
-- What are the California median household prices in our counties expected to be in the next five years?  
-- What are the California median household prices in our counties expected to be in the next ten years?  
+With California being the targeted data, we wanted to compare all the other states. Questions the team hopes to answer with the data is:  
+- What are the California median household prices in California expected to be in the next five years?  
+- What are the California median household prices in California expected to be in the next ten years?  
+- Based on the ["Best Practices"](https://www.mymoneyblog.com/4-different-rules-of-thumb-for-how-much-house-you-can-afford.html) in home buying, how much income would be needed to live in a median priced home in California at that time.  
+- What are the top 5 states Californians are moving to?  
+- How does California housing cost compare to those 5 states?
 
-Performing calculations on our analysis, we hope to answer:
-- Is it time to leave California?  
+After our analysis, we hope to answer:
+- Is it time to leave California? 
 
 ## Resources
-- **Data Source:** [data](), [data](), [data]()
+- **Data Source:** [2010_data](), [2011_data](), [2012_data](), [2013_data](), [2014_data](), [2015_data](), [2016_data](), [2017_data](), [2018_data](), [population_data](), [data](), [data]()
 - **Software:** Jupyter Notebook, PostgreSQL  
 - **Languages:** Python  
 - **Dependencies:** Pandas  
@@ -101,6 +107,7 @@ Performing calculations on our analysis, we hope to answer:
 
 **Description of the analysis phase of the project**  
 - Description of how data was split into training and testing sets  
+- Explanation of changes in model choice (if changes occurred between the Segment 2 and Segment 3 deliverables)
 - Description of how the model was trained (or retrained if the team used an existing model)
 - Description and explanation of model’s confusion matrix, including final accuracy score  
 
