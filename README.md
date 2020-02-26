@@ -89,7 +89,7 @@ After our analysis, we hope to answer:
 - Is it time to leave California? 
 
 ## Resources
-- **Data Source:** [2010_data](), [2011_data](), [2012_data](), [2013_data](), [2014_data](), [2015_data](), [2016_data](), [2017_data](), [2018_data](), [population_data](), [data](), [data]()
+- **Data Source:** [2010_data](), [2011_data](), [2012_data](), [2013_data](), [2014_data](), [2015_data](), [2016_data](), [2017_data](), [2018_data](), [population_data](), [2010_migration_flow.csv](), [Housing_and_Income.csv ](), [Region.csv](), [State.csv]()
 - **Software:** Jupyter Notebook, PostgreSQL  
 - **Languages:** Python  
 - **Dependencies:** Pandas  
@@ -118,10 +118,6 @@ After our analysis, we hope to answer:
 **Recommendation for future analysis**   
 
 ## Limitations  
-**What roadblocks were encountered?**  
-**How did you solve them?**
-The first roadblock we encountered  
-
 **Anything the team would have done differently**  
 - models benifits 
 - models limitations  
