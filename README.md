@@ -111,6 +111,10 @@ Performing calculations on our analysis, we hope to answer:
 **Recommendation for future analysis**   
 
 ## Limitations  
+**What roadblocks were encountered?**  
+**How did you solve them?**
+The first roadblock we encountered  
+
 **Anything the team would have done differently**  
 - models benifits 
 - models limitations  
