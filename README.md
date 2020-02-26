@@ -89,7 +89,7 @@ After our analysis, we hope to answer:
 - Is it time to leave California? 
 
 ## Resources
-- **Data Source:** [2010_data](), [2011_data](), [2012_data](), [2013_data](), [2014_data](), [2015_data](), [2016_data](), [2017_data](), [2018_data](), [population_data](), [2010_migration_flow.csv](), [Housing_and_Income.csv ](), [Region.csv](), [State.csv]()
+- **Data Source:** [2010_data](/Resources/data/2010_data.csv), [2011_data](/Resources/data/2011_data.csv), [2012_data](/Resources/data/2012_data.csv), [2013_data](/Resources/data/2013_data.csv), [2014_data](/Resources/data/2014_data.csv), [2015_data](/Resources/data/2015_data.csv), [2016_data](/Resources/data/2016_data.csv), [2017_data](/Resources/data/2017_data.csv), [2018_data](/Resources/data/2018_data.csv), [population_data](/Resources/data/population_data.csv), [2010_migration_flow.csv](/Resources/data/2010_data.csv), [Housing_and_Income.csv ](), [Region.csv](), [State.csv]()
 - **Software:** Jupyter Notebook, PostgreSQL  
 - **Languages:** Python  
 - **Dependencies:** Pandas  
