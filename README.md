@@ -7,10 +7,10 @@
 [Resources](#resources)  
 [Objectives](#objectives)  
 [Summary](#summary)  
-[Recommendation](#recommendation)  
-[Limitations](#limitations)  
 [Dashboard](#dashboard)  
 [Presentation](#presentation)  
+[Recommendation](#recommendation)  
+[Limitations](#limitations)  
 [Sources](#sources)  
 [Communication Protocols](#communication-protocols)  
 
@@ -84,11 +84,11 @@ With California being the targeted data, we wanted to compare all the other stat
 - What are the top 5 states Californians are moving to?  
 - How does California housing cost compare to those 5 states?
 
-After our analysis, we hope to answer:
+**After our analysis, we hope to answer:**
 - Is it time to leave California? 
 
 ## Resources
-- **Data Source:** [2010_data](), [2011_data](), [2012_data](), [2013_data](), [2014_data](), [2015_data](), [2016_data](), [2017_data](), [2018_data](), [population_data](), [data](), [data]()
+- **Data Source:** [2010_data](/Resources/data/2010_data.csv), [2011_data](/Resources/data/2011_data.csv), [2012_data](/Resources/data/2012_data.csv), [2013_data](/Resources/data/2013_data.csv), [2014_data](/Resources/data/2014_data.csv), [2015_data](/Resources/data/2015_data.csv), [2016_data](/Resources/data/2016_data.csv), [2017_data](/Resources/data/2017_data.csv), [2018_data](/Resources/data/2018_data.csv), [population_data](/Resources/data/population_data.csv), [2010_migration_flow.csv](/Data/2010_migration_flow.csv), [Housing_and_Income.csv ](/Data/Housing_and_Income.csv), [Region.csv](/Data/Region.csv), [State.csv](/Data/State.csv)
 - **Software:** Jupyter Notebook, PostgreSQL  
 - **Languages:** Python  
 - **Dependencies:** Pandas  
@@ -137,6 +137,12 @@ The first roadblock our team encountered was lack of data for our origional mach
 
 ### Description of the analysis phase of the project
 
+## Dashbooard  
+Link to dashboard (or link to video of dashboard demonstration)
+
+## Presentation  
+The presentation can be found in [Google Slides](https://docs.google.com/presentation/d/14h7wNLqN1Vh8AVsPMiOpv18YU4jbhMqiKdh0yhPtdns/edit?usp=sharing)
+
 ## Recommendation
 **Recommendation for future analysis**   
 
@@ -144,6 +150,7 @@ The first roadblock our team encountered was lack of data for our origional mach
 **Anything the team would have done differently**  
 - models benifits 
 - models limitations  
+
 
 ## Dashboard
 The dashboard presents a data story that is logical and easy to follow for someone unfamiliar with the topic. It includes all of the following:
