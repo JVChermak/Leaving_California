@@ -9,6 +9,7 @@
 [Summary](#summary)  
 [Recommendation](#recommendation)  
 [Limitations](#limitations)  
+[Dashboard](#dashboard)  
 [Presentation](#presentation)  
 [Sources](#sources)  
 [Communication Protocols](#communication-protocols)  
@@ -69,8 +70,6 @@ With the best pracice in mind and the median price of homes currently listed in 
 Although, that number is flabbergasting enough, it fails when compared to surrounding California counties.These counties the median home prices are, easily, doubled.  Meaning, the gross annual income would, also, have to double.  
 Pricing can be seen on [laalmanac.com](http://www.laalmanac.com/economy/ec37.php)  
 
-**Description of the source of data**  
-All .csv resources for our analysis were downloaded from [data.census.gov](https://data.census.gov)
 
 **Questions the team hopes to answer with the data**  
 We would like to perform analysis on the cost of housing in California that included:  
@@ -101,18 +100,42 @@ After our analysis, we hope to answer:
 - Optimize model training and input data to achieve desired model performance.
 
 ## Summary  
-**Description of the data exploration phase of the project**  
-- Description of data preprocessing
-- Description of feature engineering and the feature selection, including the team’s decision-making process  
+- Description of the data exploration phase of the project  
+- Machine Learning Model   
+- Database Integration  
+- Description of the analysis phase of the project  
 
-**Description of the analysis phase of the project**  
-- Description of how data was split into training and testing sets  
-- Explanation of changes in model choice (if changes occurred between the Segment 2 and Segment 3 deliverables)
-- Description of how the model was trained (or retrained if the team used an existing model)
-- Description and explanation of model’s confusion matrix, including final accuracy score  
+### Description of the data exploration phase of the project  
+**Obstructions to progress**  
+The first roadblock our team encountered was lack of data for our origional machine learning concept. Our first concept involved extracting data for our individual counties to compare against each other, then choose one county from another state to compare against our indivual results. Although, there is robust amount of data available through the [data.census.gov](https://data.census.gov) website, after filtering what was needed for our analysis, the amount of data remaining was not enough to provide a meaningful analysis. To overcome this obsticle we decided to broaden our analysis from four counties to all states in the U.S.. California is, now, our targeted data to compare against all the other states.  
 
-**Result of analysis**  
-- How does the model address the question or problem the team is solving.  
+### Machine Learning Model  
+**Description of data preprocessing**
+
+**Description of feature engineering and the feature selection, including the team’s decision-making process**
+
+**Description of how data was split into training and testing sets**
+
+**Explanation of model choice, including limitations and benefits**
+
+**Explanation of changes in model choice (if changes occurred between the Segment 2 and Segment 3 deliverables)**
+
+**Description of how the model was trained (or retrained if the team used an existing model)**
+
+**Description and explanation of model’s confusion matrix, including final accuracy score**
+
+**How does the model address the question or problem the team is solving.**  
+
+### Database Integration  
+**Our final segment includes a fully integrated database, with the following features:**
+- Stores static data for use during the project
+- Interfaces with the project in some format (e.g., scraping updates the database, or database connects to the model)
+- Includes at least two tables (or collections if using MongoDB)
+- Includes at least one join using the database language (not including any joins in Pandas)
+- Includes at least one connection string (using SQLAlchemy or PyMongo)
+- Important If you use a SQL database, you must provide your Entity Relationship Diagram (ERD) with relationships.  
+
+### Description of the analysis phase of the project
 
 ## Recommendation
 **Recommendation for future analysis**   
@@ -122,10 +145,43 @@ After our analysis, we hope to answer:
 - models benifits 
 - models limitations  
 
+## Dashboard
+The dashboard presents a data story that is logical and easy to follow for someone unfamiliar with the topic. It includes all of the following:
+- Images from the initial analysis
+- Data (images or report) from the machine learning task
+- At least one interactive element
+- Either the dashboard is published or the submission includes a screen capture video of it in action
+
 ## Presentation  
 The presentation can be found in [Google Slides](https://docs.google.com/presentation/d/14h7wNLqN1Vh8AVsPMiOpv18YU4jbhMqiKdh0yhPtdns/edit?usp=sharing)  
 
 ## Sources  
+### Description of the source of data  
+**All .csv resources for our analysis were downloaded from [data.census.gov](https://data.census.gov)**  
+
+Resources for data:  
+- [population_data](https://www2.census.gov/programs-surveys/popest/datasets/2010-2019/national/totals/nst-est2019-alldata.csv?#)  
+- [2010_data](https://data.census.gov/cedsci/table?g=0100000US.04000.001&y=2010&tid=ACSST1Y2010.S2506&t=Financial%20Characteristics%3AHousing%3AHousing%20Value%20and%20Purchase%20Price%3AIncome%20%28Households,%20Families,%20Individuals%29%3AIncome%20and%20Earnings%3AIncome%20and%20Poverty%3AMortgage%20Costs&vintage=2018&hidePreview=true&moe=false)  
+- [2011_data](https://data.census.gov/cedsci/table?g=0100000US.04000.001&y=2011&tid=ACSST1Y2011.S2506&t=Financial%20Characteristics%3AHousing%3AHousing%20Value%20and%20Purchase%20Price%3AIncome%20%28Households,%20Families,%20Individuals%29%3AIncome%20and%20Earnings%3AIncome%20and%20Poverty%3AMortgage%20Costs&vintage=2018&hidePreview=true&moe=false)
+
+- [2012_data](https://data.census.gov/cedsci/table?g=0100000US.04000.001&y=2012&tid=ACSST1Y2012.S2506&=Financial%20Characteristics%3AHousing%3AHousing%20Value%20and%20Purchase%20Price%3AIncome%20%28Households,%20Families,%20Individuals%29%3AIncome%20and%20Earnings%3AIncome%20and%20Poverty%3AMortgage%20Costs&vintage=2018&hidePreview=true&moe=false)
+
+- [2013_data](https://data.census.gov/cedsci/table?g=0100000US.04000.001&y=2013&tid=ACSST1Y2013.S2506&t=Financial%20Characteristics%3AHousing%3AHousing%20Value%20and%20Purchase%20Price%3AIncome%20%28Households,%20Families,%20Individuals%29%3AIncome%20and%20Earnings%3AIncome%20and%20Poverty%3AMortgage%20Costs&vintage=2018&hidePreview=true&moe=false)
+
+- [2014_data](https://data.census.gov/cedsci/table?g=0100000US.04000.001&y=2014&tid=ACSST1Y2014.S2506&t=Financial%20Characteristics%3AHousing%3AHousing%20Value%20and%20Purchase%20Price%3AIncome%20%28Households,%20Families,%20Individuals%29%3AIncome%20and%20Earnings%3AIncome%20and%20Poverty%3AMortgage%20Costs&vintage=2018&hidePreview=true&moe=false)
+
+- [2015_data](https://data.census.gov/cedsci/table?g=0100000US.04000.001&y=2015&tid=ACSST1Y2015.S2506&t=Financial%20Characteristics%3AHousing%3AHousing%20Value%20and%20Purchase%20Price%3AIncome%20%28Households,%20Families,%20Individuals%29%3AIncome%20and%20Earnings%3AIncome%20and%20Poverty%3AMortgage%20Costs&vintage=2018&hidePreview=true&moe=false)
+
+- [2016_data](https://data.census.gov/cedsci/table?g=0100000US.04000.001&y=2016&tid=ACSST1Y2016.S2506&t=Financial%20Characteristics%3AHousing%3AHousing%20Value%20and%20Purchase%20Price%3AIncome%20%28Households,%20Families,%20Individuals%29%3AIncome%20and%20Earnings%3AIncome%20and%20Poverty%3AMortgage%20Costs&vintage=2018&hidePreview=true&moe=false)
+
+- [2017_data](https://data.census.gov/cedsci/table?g=0100000US.04000.001&y=2017&tid=ACSST1Y2017.S2506&t=Financial%20Characteristics%3AHousing%3AHousing%20Value%20and%20Purchase%20Price%3AIncome%20%28Households,%20Families,%20Individuals%29%3AIncome%20and%20Earnings%3AIncome%20and%20Poverty%3AMortgage%20Costs&vintage=2018&hidePreview=true&moe=false)
+
+- [2018_data](https://data.census.gov/cedsci/table?g=0100000US.04000.001&y=2018&tid=ACSST1Y2018.S2506&t=Financial%20Characteristics%3AHousing%3AHousing%20Value%20and%20Purchase%20Price%3AIncome%20%28Households,%20Families,%20Individuals%29%3AIncome%20and%20Earnings%3AIncome%20and%20Poverty%3AMortgage%20Costs&vintage=2018&hidePreview=true&moe=false)
+
+- DBD created at :
+[quickdatabasediagrams.com](https://www.quickdatabasediagrams.com/)
+
+
 ### Description of visual sources:
 **README.md video** was created with clips from: 
 - [California faces housing 'crisis' amid extremely high rents](https://www.youtube.com/watch?v=kJH4wSW_X5A)
