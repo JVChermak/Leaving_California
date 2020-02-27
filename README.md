@@ -86,7 +86,7 @@ With California being the targeted data, we wanted to compare all the other stat
 - What are the top 5 states Californians are moving to?  
 - How does California housing cost compare to those 5 states?
 
-After our analysis, we hope to answer:
+**After our analysis, we hope to answer:**
 - Is it time to leave California? 
 
 ## Resources
