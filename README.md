@@ -7,10 +7,10 @@
 [Resources](#resources)  
 [Objectives](#objectives)  
 [Summary](#summary)  
+[Dashboard](#dashboard)  
+[Presentation](#presentation)
 [Recommendation](#recommendation)  
 [Limitations](#limitations)  
-[Dashboard](#dashboard)
-[Presentation](#presentation)  
 [Sources](#sources)  
 [Communication Protocols](#communication-protocols)  
 
@@ -115,6 +115,12 @@ After our analysis, we hope to answer:
 **Result of analysis**  
 - How does the model address the question or problem the team is solving.  
 
+## Dashbooard  
+Link to dashboard (or link to video of dashboard demonstration)
+
+## Presentation  
+The presentation can be found in [Google Slides](https://docs.google.com/presentation/d/14h7wNLqN1Vh8AVsPMiOpv18YU4jbhMqiKdh0yhPtdns/edit?usp=sharing)
+
 ## Recommendation
 **Recommendation for future analysis**   
 
@@ -122,12 +128,6 @@ After our analysis, we hope to answer:
 **Anything the team would have done differently**  
 - models benifits 
 - models limitations  
-
-## Dashbooard  
-Link to dashboard (or link to video of dashboard demonstration)
-
-## Presentation  
-The presentation can be found in [Google Slides](https://docs.google.com/presentation/d/14h7wNLqN1Vh8AVsPMiOpv18YU4jbhMqiKdh0yhPtdns/edit?usp=sharing)  
 
 ## Sources  
 ### Description of visual sources:
