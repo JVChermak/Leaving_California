@@ -88,7 +88,7 @@ With California being the targeted data, we wanted to compare all the other stat
 - Is it time to leave California? 
 
 ## Resources
-- **Data Source:** [2010_data](/Resources/data/2010_data.csv), [2011_data](/Resources/data/2011_data.csv), [2012_data](/Resources/data/2012_data.csv), [2013_data](/Resources/data/2013_data.csv), [2014_data](/Resources/data/2014_data.csv), [2015_data](/Resources/data/2015_data.csv), [2016_data](/Resources/data/2016_data.csv), [2017_data](/Resources/data/2017_data.csv), [2018_data](/Resources/data/2018_data.csv), [population_data](/Resources/data/population_data.csv), [2010_migration_flow.csv](/Data/2010_migration_flow.csv), [Housing_and_Income.csv ](/Data/Housing_and_Income.csv), [Region.csv](/Data/Region.csv), [State.csv](/Data/State.csv)
+- **Data Source:** [2010_data](/Resources/data/2010_data.csv), [2011_data](/Resources/data/2011_data.csv), [2012_data](/Resources/data/2012_data.csv), [2013_data](/Resources/data/2013_data.csv), [2014_data](/Resources/data/2014_data.csv), [2015_data](/Resources/data/2015_data.csv), [2016_data](/Resources/data/2016_data.csv), [2017_data](/Resources/data/2017_data.csv), [2018_data](/Resources/data/2018_data.csv), [population_data](/Resources/data/population_data.csv),[migration_2010](/Resources/data/migration_2010.csv), [migration_2011](/Resources/data/migration_2011.csv), [migration_2012](/Resources/data/migration_2012.csv), [migration_2013](/Resources/data/migration_2013.csv), [migration_2014](/Resources/data/migration_2014.csv), [migration_2015](/Resources/data/migration_2015.csv), [migration_2016](/Resources/data/migration_2016.csv), [migration_2017](/Resources/data/migration_2017.csv), [migration_2018](/Resources/data/migration_2018.csv),  [2010_migration_flow.csv](/Data/2010_migration_flow.csv), [Housing_and_Income.csv ](/Data/Housing_and_Income.csv), [Region.csv](/Data/Region.csv), [State.csv](/Data/State.csv)
 - **Software:** Jupyter Notebook, PostgreSQL  
 - **Languages:** Python  
 - **Dependencies:** Pandas  
@@ -183,7 +183,18 @@ Resources for data:
 
 - [2017_data](https://data.census.gov/cedsci/table?g=0100000US.04000.001&y=2017&tid=ACSST1Y2017.S2506&t=Financial%20Characteristics%3AHousing%3AHousing%20Value%20and%20Purchase%20Price%3AIncome%20%28Households,%20Families,%20Individuals%29%3AIncome%20and%20Earnings%3AIncome%20and%20Poverty%3AMortgage%20Costs&vintage=2018&hidePreview=true&moe=false)
 
-- [2018_data](https://data.census.gov/cedsci/table?g=0100000US.04000.001&y=2018&tid=ACSST1Y2018.S2506&t=Financial%20Characteristics%3AHousing%3AHousing%20Value%20and%20Purchase%20Price%3AIncome%20%28Households,%20Families,%20Individuals%29%3AIncome%20and%20Earnings%3AIncome%20and%20Poverty%3AMortgage%20Costs&vintage=2018&hidePreview=true&moe=false)
+- [2018_data](https://data.census.gov/cedsci/table?g=0100000US.04000.001&y=2018&tid=ACSST1Y2018.S2506&t=Financial%20Characteristics%3AHousing%3AHousing%20Value%20and%20Purchase%20Price%3AIncome%20%28Households,%20Families,%20Individuals%29%3AIncome%20and%20Earnings%3AIncome%20and%20Poverty%3AMortgage%20Costs&vintage=2018&hidePreview=true&moe=false)  
+
+- [migration_2010](https://www2.census.gov/programs-surveys/demo/tables/geographic-mobility/2010/state-to-state-migration/state_to_state_migrations_table_2010.xls)  
+- [migration_2011](https://www2.census.gov/programs-surveys/demo/tables/geographic-mobility/2012/state-to-state-migration/state_to_state_migrations_table_2012.xls)  
+- [migration_2012](https://www2.census.gov/programs-surveys/demo/tables/geographic-mobility/2012/state-to-state-migration/state_to_state_migrations_table_2012.xls)
+- [migration_2013](https://www2.census.gov/programs-surveys/demo/tables/geographic-mobility/2013/state-to-state-migration/state_to_state_migrations_table_2013.xls)
+- [migration_2014](https://www2.census.gov/programs-surveys/demo/tables/geographic-mobility/2014/state-to-state-migration/State_to_State_Migrations_Table_2014.xls)
+- [migration_2015](https://www2.census.gov/programs-surveys/demo/tables/geographic-mobility/2015/state-to-state-migration/State_to_State_Migrations_Table_2015.xls)
+- [migration_2016](https://www2.census.gov/programs-surveys/demo/tables/geographic-mobility/2016/state-to-state-migration/State_to_State_Migrations_Table_2016.xls)
+- [migration_2017](https://www2.census.gov/programs-surveys/demo/tables/geographic-mobility/2017/state-to-state-migration/State_to_State_Migrations_Table_2017.xls)
+- [migration_2018](https://www2.census.gov/programs-surveys/demo/tables/geographic-mobility/2018/state-to-state-migration/State_to_State_Migrations_Table_2018.xls)
+
 
 - DBD created at :
 [quickdatabasediagrams.com](https://www.quickdatabasediagrams.com/)
