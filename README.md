@@ -8,7 +8,7 @@
 [Objectives](#objectives)  
 [Summary](#summary)  
 [Dashboard](#dashboard)  
-[Presentation](#presentation)
+[Presentation](#presentation)  
 [Recommendation](#recommendation)  
 [Limitations](#limitations)  
 [Sources](#sources)  
