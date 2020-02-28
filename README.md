@@ -135,13 +135,7 @@ The first roadblock our team encountered was lack of data for our origional mach
 - Includes at least one connection string (using SQLAlchemy or PyMongo)
 - Important If you use a SQL database, you must provide your Entity Relationship Diagram (ERD) with relationships.  
 
-### Description of the analysis phase of the project
-
-## Dashbooard  
-Link to dashboard (or link to video of dashboard demonstration)
-
-## Presentation  
-The presentation can be found in [Google Slides](https://docs.google.com/presentation/d/14h7wNLqN1Vh8AVsPMiOpv18YU4jbhMqiKdh0yhPtdns/edit?usp=sharing)
+### Description of the analysis phase of the project  
 
 ## Recommendation
 **Recommendation for future analysis**   
@@ -164,7 +158,7 @@ The presentation can be found in [Google Slides](https://docs.google.com/present
 
 ## Sources  
 ### Description of the source of data  
-**All .csv resources for our analysis were downloaded from [data.census.gov](https://data.census.gov)**  
+**All .csv resources for our analysis were downloaded from [data.census.gov](https://data.census.gov) and [www2.census.gov](https://www2.census.gov)**  
 
 Resources for data:  
 - [population_data](https://www2.census.gov/programs-surveys/popest/datasets/2010-2019/national/totals/nst-est2019-alldata.csv?#)  
@@ -193,11 +187,10 @@ Resources for data:
 - [migration_2015](https://www2.census.gov/programs-surveys/demo/tables/geographic-mobility/2015/state-to-state-migration/State_to_State_Migrations_Table_2015.xls)
 - [migration_2016](https://www2.census.gov/programs-surveys/demo/tables/geographic-mobility/2016/state-to-state-migration/State_to_State_Migrations_Table_2016.xls)
 - [migration_2017](https://www2.census.gov/programs-surveys/demo/tables/geographic-mobility/2017/state-to-state-migration/State_to_State_Migrations_Table_2017.xls)
-- [migration_2018](https://www2.census.gov/programs-surveys/demo/tables/geographic-mobility/2018/state-to-state-migration/State_to_State_Migrations_Table_2018.xls)
+- [migration_2018](https://www2.census.gov/programs-surveys/demo/tables/geographic-mobility/2018/state-to-state-migration/State_to_State_Migrations_Table_2018.xls)  
 
-
-- DBD created at :
-[quickdatabasediagrams.com](https://www.quickdatabasediagrams.com/)
+DBD created at :
+- [quickdatabasediagrams.com](https://www.quickdatabasediagrams.com/)
 
 
 ### Description of visual sources:
