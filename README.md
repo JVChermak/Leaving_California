@@ -388,13 +388,12 @@ In summary, this model is good at predicting good housing cost. The model's accu
 <br/>
 <br/>
 Different visualization types serve different purposes. The purpose of our line chart is to display data over time. With Matplotlib set up, we were able to see the rate the top five states Californians were moving to.  
-<img align="right" width="700" src="/Data/bar graph_by Year.png"><br/>
-<br/>
+<img align="left" width="700" src="/Data/bar graph_by Year.png"><br/>
 <br/>
 <br/>
 <br/>
 A bar chart tells a different visual story than a line chart. There are many benefits to using a bar chart. They’re good at displaying discrete data in distinct columns. They also tend to be visually strong. In a bar chart, we can clearly see the differences among the groups and the bar color of each group:
-<img align="right" width="700" src="/Data/bar graph_by Name.png"><br/>  
+<img align="left" width="700" src="/Data/bar graph_by Name.png"><br/>  
 <br/>
 <br/>
 <br/>
