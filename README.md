@@ -397,8 +397,6 @@ Different visualization types serve different purposes. The purpose of our line 
 A bar chart tells a different visual story than a line chart. There are many benefits to using a bar chart. They’re good at displaying discrete data in distinct columns. 
 <img align="right" width="700" src="/Data/bar graph_by Name.png"><br/>  
 <br/>
-<br/>
-<br/>
 <br/>  
 
 They also tend to be visually strong. In a bar chart, we can clearly see the differences among the groups and the bar color of each group.  
