@@ -2,8 +2,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
-from datetime import datetime, timedelta
-from dateutil import relativedelta
+from datetime import datetime
 import numpy as np
 
 # Read data
@@ -17,7 +16,8 @@ x = ca_housing_df['Year']
 y = ca_housing_df['Median Housing Cost (monthly) ($)']
 plt.scatter(x, y)
 plt.xlabel('Years')
-plt.ylabel('Monthly Median Housing Cost (Dollars)')
+plt.ylabel('Median Monthly Housing Cost (USD)')
+plt.title('California Monthly Median Housing Costs')
 plt.show()
 
 # Set independent variable
@@ -36,7 +36,11 @@ y_pred = model.predict(X)
 # Visualize the regression line
 plt.scatter(X,y1)
 plt.plot(X, y_pred, color='red')
+plt.xlabel('Years')
+plt.ylabel('Median Monthly Housing Cost (USD)')
+plt.title('California Monthly Median Housing Costs')
 plt.savefig('img/median_housing1.png')
+plt.show()
 
 # Find the equation for the regression line
 print(model.coef_)
@@ -67,7 +71,11 @@ y_pred2 = model.predict(X2)
 # Visualize the regression line
 plt.scatter(X2,y2)
 plt.plot(X2, y_pred2, color='red')
+plt.xlabel('Years')
+plt.ylabel('Median Monthly Housing Cost (USD)')
+plt.title('California Median Monthly Housing Cost (USD)')
 plt.savefig('img/median_housing2.png')
+plt.show()
 
 # Find the equation for the regression line
 print(model.coef_)
@@ -93,7 +101,8 @@ zillow_ca_df['Time'] = pd.to_datetime(zillow_ca_df['Time'], format='%Y-%m')
 # Visually inspect Zillow data
 plt.plot_date(zillow_ca_df.Time, zillow_ca_df.Typical_Home_Value)
 plt.xlabel('Time')
-plt.ylabel('Typical Home Value in USD')
+plt.ylabel('Typical Home Value (USD)')
+plt.title('California Typical Home Value from Zillow')
 plt.show()
 
 # Create Months column that represents the number of months since 1994-04
@@ -115,11 +124,15 @@ y_predz = z_model.predict(X3)
 # Visualize the regression line
 plt.scatter(X3,y3)
 plt.plot(X3, y_predz, color='red')
+plt.xlabel('Time')
+plt.ylabel('Typical Home Value (USD)')
+plt.title('California Typical Home Value from Zillow')
 plt.xlim(0,286)
 plt.ylim(150000,600000)
 plt.xticks(np.arange(0, 300, step=50))
 plt.yticks(np.arange(0,600000, step=50000))
 plt.savefig('img/median_home_value1.png')
+plt.show()
 
 # Find the equation for the regression line
 print(z_model.coef_)
@@ -145,8 +158,11 @@ y_pred4 = model.predict(X4)
 # Visualize the regression line
 plt.scatter(X4,y4)
 plt.plot(X4, y_pred4, color='red')
-plt.show()
+plt.xlabel('Years')
+plt.ylabel('Median Home Value')
+plt.title('California Median Home Value from Census')
 plt.savefig('img/median_home_value2.png')
+plt.show()
 
 # Find the equation for the regression line
 print(model.coef_)
