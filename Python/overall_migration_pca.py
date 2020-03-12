@@ -24,12 +24,12 @@ df_full_migration = df_full_migration[['Year', 'Region', 'Current residence', 'P
  'Wisconsin', 'Wyoming']]
 df_full_migration
 
+# Replace all NaN in the state to state migration matrix with 0
+df_full_migration.fillna(0, inplace=True)
+
 # Remove Puerto Rico because has no region
 df_full_migration = df_full_migration[df_full_migration['Current residence'] != 'Puerto Rico']
 df_full_migration
-
-# Replace all NaN in the state to state migration matrix with 0
-df_full_migration.fillna(0, inplace=True)
 
 # Separate US data from states
 us_migration_df = df_full_migration[df_full_migration['Region'] == 'All']
@@ -175,8 +175,15 @@ predictions = model.predict(df_state_migration_pca)
 df_state_migration_pca["class"] = model.labels_
 df_state_migration_pca.head(10)
 
+# Create new DataFrame with all info
+state_migration_info_df = clean_state_migration_df.merge(df_state_migration_pca, left_on=clean_state_migration_df.index, right_on=df_state_migration_pca.index)
+state_migration_info_df.drop(columns=['key_0'], inplace=True)
+state_migration_info_df = states_info_df.merge(state_migration_info_df, left_on=states_info_df.index, right_on=state_migration_info_df.index)
+state_migration_info_df.drop(columns=['key_0'], inplace=True)
+state_migration_info_df
+
 # Plot the clusters
-df_state_migration_pca.hvplot.scatter(
+state_migration_info_df.hvplot.scatter(
     x='PC 1',
     y='PC 2',
     hover_cols=['class'],
@@ -186,7 +193,7 @@ df_state_migration_pca.hvplot.scatter(
 
 # Plot a 3D-scatter with PCA
 fig = px.scatter_3d(
-    df_state_migration_pca,
+    state_migration_info_df,
     x="PC 1",
     y="PC 2",
     z="PC 3",
