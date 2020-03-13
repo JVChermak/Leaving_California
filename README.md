@@ -438,7 +438,7 @@ The dashboard presents a data story that is logical and easy to follow for someo
 <br/>
 
 ## Presentation  
-The presentation can be found in [Google Slides](https://docs.google.com/presentation/d/14h7wNLqN1Vh8AVsPMiOpv18YU4jbhMqiKdh0yhPtdns/edit?usp=sharing)  
+The presentation can be found in [Google Slides](https://docs.google.com/presentation/d/e/2PACX-1vRPRYl5EeTXoGJxJPMSvwe9Y6fMAqUzO8Dy-muM66Io3Hx2QggDBBcRvqVJm9GlAwUasHoYhnPj7QyV/pub?start=true&loop=false&delayms=5000)  
 <br/>
 <br/>
 <br/>
