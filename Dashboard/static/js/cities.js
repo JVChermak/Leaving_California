@@ -45,7 +45,7 @@ let cities = [{
 	location: [39.876019, -117.224121],
 	city: "Carson",
 	state: "NV",
-  population:3080156, 
+  population:3080156,
   migflow: 22433
   }, 
   {
@@ -61,7 +61,6 @@ let cities = [{
 	state: "CO",
   population: 5758736,
   migflow: 18755
-
   },
   {
 	location: [37.541290, -77.434769],
@@ -76,7 +75,6 @@ let cities = [{
 	state: "MA",
   population: 6892503,
   migflow: 17529
-
   },
   {
 	location: [39.983334, -82.983330],
@@ -133,6 +131,6 @@ let cities = [{
 	state: "MI",
   population: 9986857,
   migflow: 10335
-  },
+  }
   ];
 
