@@ -394,38 +394,57 @@ They also tend to be visually strong. In a bar chart, we can clearly see the dif
 <br/>
 <br/>
 <br/>
+One way we can tell stories with data is through interactive maps, which is what we created in our dashboard.  
 
+The purpose of this map is to visually show the number of people moving out of California (CA) by year and the differences in these numbers by States receiving CA migrants.  
 
+A map was well suited for our project as the project is location-based. For stakeholders or our audience, a map visualization of where Californians (CA) are migrating and in what numbers is critical for understanding the core of the project and also visually appealing.  
 
-### Database Integration  
+To complete this project, we use selected data from our CSV and retrieve a list of geographical coordinates or centers from census.gov website. Then add the data to a map.  
+
+Usually, to map multiple points a URL is used because the data is usually inaccessible or too large. But for this project the data for which we wanted visualized was not nearly as large.  
+
+Our approach was to use the JavaScript and the D3.js library to retrieve the coordinates. We use the Leaflet library to plot the data on a Mapbox map through an API request. Next, we create an index.html page adding to it Leaflet CSS and JavaScript files. Then we create a style.css file which is necessary for setting specific height and style for the map on our index.html. The next step is to tell our index.html page to use the syle.css file by adding the CSS link in the head of the index.html file.  
+
+Two other essential pieces needed includes the config.js and logic.js files. The config.js file holds the Mapbox API key, while the logic.js file will contain all the JavaScript and Leaflet code to create the map and add data to the map.  
+
+In the step following, it is essential to allow our index.html file to use the logic.js and config.js scripts. To do this, we add our scripts to the body of the index.html file. Next, we add a circleMarker() function to the map via Leaflet.  
+
+The last step is to add multiple markers or points to the map. To add a marker for each location or state receiving greater than 10,000 CA migrants in 2018, we iterate through the array of longitudes and latitudes and add each to the map. For best practice, we save the states array in an external file and refer to that file and dataset in the logic.js file. Finally, to add data from each object in the cities array we use Leaflet’s bindPopup() method on the marker() function.
+<img align="right" width="700" src="/Data/leaf_map_here.png"><br/>  
+
+ 
+### Database
 **Our final segment includes a fully integrated database, with the following features:**
 - Stores static data for use during the project
-- Interfaces with the project in some format (e.g., scraping updates the database, or database connects to the model)
-- Includes at least two tables (or collections if using MongoDB)
-- Includes at least one join using the database language (not including any joins in Pandas)
-- Includes at least one connection string (using SQLAlchemy or PyMongo)
-- Important If you use a SQL database, you must provide your Entity Relationship Diagram (ERD) with relationships.  
-<br/>
-<img align="center" width="350" src="/Data/Migration_FlowDB(2).png"><br/>
-<br/>
-<br/>
-<br/>
-<br/>
+- Interfaces with the project
+- Tables
+- Joins using the database language
+- Connection string
+- Entity Relationship Diagram (ERD)  
 
-## Recommendation
-**Recommendation for future analysis** 
-* Using functions to perform all the load process to eliminate any possible errors
-<br/>
-<br/>
-<br/>
-<br/>
+**Stores static data for use during the project**  
+Once a clean data was obtained, parsed and sorted, it made it clear what types of tables could be useful for the project. Tables were then built in PostgreSQL to store static data. An ERD with a schema was first constructed and helped shape how and what questions we wanted the database to answer or insights to generate. Eventually, multiple tables were built to store static data.  
 
-## Limitations  
-**Anything the team would have done differently**  
+**Interfaces with the project**  
+The database interfaces with our python notebook file where all the data loading and cleaning occurred. This was achieved by importing create_engine form sqlaclchemy; the information that sqlaclchemy needs to create a database engine.  
+
+**Tables**  
+Multiple tables were generated to store static data as the project evolved. Tables include combined_ca_data, ca_analysis, housing_and_income, analysis_info, just to mention a few. For example, the ca_analysis table stores static data of all CA who moved to selected states between a given period, ordered by ascending order. Similarly, the analysis_info table stores median housing cost(monthly) data for all states.  
+
+**Joins using the database language**
+A left join using the database is performed on selected states from 2017 and 2018, left joining on the States which is a column found in both data sets.  
+
+
+**Connection string**  
+A connection string using SQLAlchemy connects our python to our PostgreSQL.  
+
+**Entity Relationship Diagram (ERD)**  
+<img align="center" width="400" src="/Data/Migration_FlowDB(2).png"><br/>
 <br/>
 <br/>
 <br/>
-<br/>
+<br/>  
 
 ## Dashboard
 The dashboard presents a data story that is logical and easy to follow for someone unfamiliar with the topic. It includes all of the following:
@@ -439,11 +458,28 @@ The dashboard presents a data story that is logical and easy to follow for someo
 <br/>
 
 ## Presentation  
-The presentation can be found in [Google Slides](https://docs.google.com/presentation/d/e/2PACX-1vRPRYl5EeTXoGJxJPMSvwe9Y6fMAqUzO8Dy-muM66Io3Hx2QggDBBcRvqVJm9GlAwUasHoYhnPj7QyV/pub?start=true&loop=false&delayms=5000)  
+The presentation can be found in [Google Slides](https://docs.google.com/presentation/d/14h7wNLqN1Vh8AVsPMiOpv18YU4jbhMqiKdh0yhPtdns/edit?usp=sharing)  
 <br/>
 <br/>
 <br/>
 <br/>
+
+## Recommendation
+**Recommendation for future analysis**  
+**Anything the team would have done differently**
+<br/>
+<br/>
+<br/>
+<br/>
+
+## Limitations  
+The creating of the migration flow map requires registration for a [Mapbox](https://www.mapbox.com/) account to generate an API key to allow rendering of maps on the browser. Mapbox does provide a free tier on their [pricing]( https://www.mapbox.com/pricing/), however a credit card is required for the sign up.
+<br/>
+<br/>
+<br/>
+<br/>
+
+
 
 ## Sources  
 ### Description of the source of data  
