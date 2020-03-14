@@ -406,7 +406,7 @@ They also tend to be visually strong. In a bar chart, we can clearly see the dif
 - Includes at least one connection string (using SQLAlchemy or PyMongo)
 - Important If you use a SQL database, you must provide your Entity Relationship Diagram (ERD) with relationships.  
 <br/>
-<img align="center" width="200" src="/Data/Migration_FlowDB(2).png"><br/>
+<img align="center" width="350" src="/Data/Migration_FlowDB(2).png"><br/>
 <br/>
 <br/>
 <br/>
