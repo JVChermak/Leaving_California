@@ -133,7 +133,7 @@ Once the datasets were combined for use in the machine learning models, we disco
 
 In the Migration Flow dataset, each row had a null data point to signify that no person migrated to the same state. For example, it doesn't make sense to say that a person migrated from Alabama to Alabama, so the value was null. Each of these values was changed to 0 for the purpose of the machine learning models.
 
-Using the **duplicated().sum() method**, we, also, saw our dataset did **not** have duplicates.  
+Using the **duplicated().sum() method**, we also saw our dataset did **not** have duplicates.  
 
 <img align="left" width="700" src="/pics/duplicate.png"><br/>
 <br/> 
@@ -148,7 +148,7 @@ With uncertainty of what housing data would be of value for our analysis, we wen
 **Is the data in a format that can be passed into an unsupervised learning model?**  
 We saw that all our data had the incorrect type for each column. We had to use [pandas.to_numeric](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.to_numeric.html) to convert our arguments to a numeric type. Also, we know that our model can’t have strings passed into it. The only string value left is the name of the states. 
 
-In our dataset on states housing cost, The scale for Median Income and Median Home Value is much larger than all the other values in the dataset. We adjusted this format by dividing by 1,000 to rescale those data points.
+In our dataset on state housing costs, the scale for Median Income and Median Home Value is much larger than all the other values in the dataset. We adjusted this format by dividing by 1,000 to rescale those data points.
 
 Because values varied between single digits representing percentages to numbers representing thousands or millions of dollars, all data for the unsupervised learning models was scaled using the StandardScaler method.
 
@@ -156,7 +156,7 @@ Because values varied between single digits representing percentages to numbers 
 **Data transformation involves thinking about the future. More times than not, there will be new data coming into our data storage, with three people working on different types of data analysis. We want to make sure that whoever wants to use the data in the future can do so.**  
 
 **Can I quickly hand off this data for others to use?**  
-The data now needs to be transformed back into a more user-friendly format. We converted the final products into common data type(CSV) files. With our data being cleaned and processed, it is ready to be converted to a readable format for future use.  
+The data now needs to be transformed back into a more user-friendly format. We converted the final products into common data type (CSV) files. With our data being cleaned and processed, it is ready to be converted to a readable format for future use.  
 
 We had to perform all these steps on all our datasets. We kept the process consist, not only, for us to be able to easily concatenate the years, but to have a meaningful analysis.  
 
@@ -188,67 +188,55 @@ Benefits to us using a random forest model are both output and feature selection
 
 ## Changes In Model's Choice  
 **Explanation of changes in model choice (if changes occurred between the Segment 2 and Segment 3 deliverables)**
-The main change between Segment 2 and Segmen 3 was the feature engineering done to prepare for the RandomForest model. The original data does not have a target column, so one was created using a calculation of our choosing. The original calculation of monthly housing cost to monthly income ratio less than 28% only produced four "positive" outcomes all in 2010, so the model performed very well at predicting when to stay, but not reliably in terms of when to leave. Due to the number of people that have migrated from their states from 2016 on, the calculation was changed to the use of Home Value being less than three times the annual income. This produced a much more reasonable target column.
+The main change between Segment 2 and Segment 3 was the feature engineering done to prepare for the RandomForest model. The original data does not have a target column, so one was created using a calculation of our choosing. The original calculation of monthly housing cost to monthly income ratio less than 28% only produced four "positive" outcomes all in 2010, so the model performed very well at predicting when to stay (precision 0.98, recall 0.99), but not reliably in terms of when to leave (precision 0.67, recall 0.50). Due to the number of people that have migrated from their states from 2016 on, the calculation was changed to the use of home value being less than three times the annual income. This produced a much more reasonable target column with 33 "positive" outcomes and allowed the model to train and test better.
 
 ## How the Model Was Trained  
 **Description of how the model was trained (or retrained if the team used an existing model)**  
-The model -> fit -> predict/transform workflow is also used after scaling data with the StandardScaler. This standardizes the data, meaning that all of our numerical columns will now have a mean of 0 and a standard deviation of 1, reducing the likelihood that large values will unduly influence our model.  
+The model -> fit -> predict workflow was used on supervised and unsupervised machine learning models. The unsupervised K-means models were not trained and tested, neither was the linear regression of the housing costs in California. For the RandomForest Classifier, the data was split into the train and test sets, then the independent data was scaled using the StandardScaler fit to the X_train data. This standardizes the data, meaning that all of our numerical columns will now have a mean of 0 and a standard deviation of 1, reducing the likelihood that large values will unduly influence our model. The model was then fit to the scaled X_train and y_train data. Once the model was trained, the scaled X_test and y_test data was used to predict. 
 
 ## Model's Confusion Matrix  
-**Description and explanation of model’s confusion matrix, including final accuracy score**  Will get a new screenshot of the final model.
-<img align="left" width="900" src="/pics/confusion_matrix.png"><br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+**Description and explanation of model’s confusion matrix, including final accuracy score**
+<img align="left" width="900" src="/pics/final_confusion_matrix.png"><br/>
 <br/>
 <br/>
 <br/>
 <br/>
 <br/>
 
-### **Models’ performance**  Will update this to match the new confusion matrix.
+### **Models’ performance**
 **The results show that:**  
-- Out of **113** good housing cost (Actual 0), **112** were predicted to be good (Predicted 0), which we call true positives.  
-- Out of **113** good housing cost (Actual 0), **1** was predicted to be bad (Predicted 1), which is considered a false negative. 
-- Out of **4** bad housing cost (Actual 1), **2** was predicted to be good (Predicted 0) and are considered false positives.  
-- Out of **4** bad housing cost (Actual 1), **2** were predicted to be bad (Predicted 1) and are considered true negatives.  
+- Out of **84** good housing cost (Actual 0), **84** were predicted to be good (Predicted 0), which we call true positives.  
+- Out of **84** good housing cost (Actual 0), **0** was predicted to be bad (Predicted 1), which is considered a false negative. 
+- Out of **33** bad housing cost (Actual 1), **1** was predicted to be good (Predicted 0) and are considered false positives.  
+- Out of **33** bad housing cost (Actual 1), **32** were predicted to be bad (Predicted 1) and are considered true negatives.  
 <br/>
 <br/>  
 
 ##### **Precision**  
-Precision is the measure of how reliable a positive classification is. From our results, the precision for the good housing cost can be determined by the ratio **TP/(TP + FP)**, which is **112/(112 + 2) = .9825**. The precision for the bad housing cost can be determined as follows: **2/(2 + 1) = .6667**. A low precision is indicative of a large number of false positives—of the 3 housing cost we predicted to be bad housing cost,  1 was actually a good housing cost.
+Precision is the measure of how reliable a positive classification is. From our results, the precision for the good housing cost can be determined by the ratio **TP/(TP + FP)**, which is **84/(84 + 1) = .9882**. The precision for the bad housing cost can be determined as follows: **32/(32 + 0) = 1.00**. A high precision is indicative of a low number of false positives—of the 32 housing cost we predicted to be bad housing cost, none were actually a good housing cost.
 <br/> 
 
 ##### **Recall scores**  
-Recall is the ability of the classifier to find all the positive samples. It can be determined by the ratio: TP/(TP + FN), or  for the good housing cost **112/(112 + 1) = .9912** and for the bad housing cost **2/(2 + 2) = .5**. A low recall is indicative of a large number of false negatives.
+Recall is the ability of the classifier to find all the positive samples. It can be determined by the ratio: TP/(TP + FN), or  for the good housing cost **84/(84 + 0) = 1.00** and for the bad housing cost **32/(32 + 1) = .9697**. A high recall is indicative of a low number of false negatives.
 <br/>  
 
 ##### **Balanced accuracy score**  
-An accuracy score is not always an appropriate or a meaningful performance metric. This program’s accuracy score appears to be great at **0.9744**.
+An accuracy score is another performance metric. This program’s accuracy score appears to be great at **0.9915**.
 <br/> 
 
 ##### **F1 score**  
-F1 score is a weighted average of the true positive rate (recall) and precision, where the best score is 1.0 and the worst is 0.0.
+F1 score is a weighted average of the true positive rate (recall) and precision, where the best score is 1.0 and the worst is 0.0. For classifying good housing cost, the F1 score is 0.99, while the score for classifying bad housing cost is 0.98.
 <br/>  
 
 ##### **Support**  
-Support is the number of actual occurrences of the class in the specified dataset. For our results, there are **113** actual occurrences for the good housing cost and **4** actual occurrences for bad housing cost.
+Support is the number of actual occurrences of the class in the specified dataset. For our results, there are **84** actual occurrences for the good housing cost and **33** actual occurrences for bad housing cost.
 <br/> 
 
 ##### **Recommendation on the model to use:**  
-In summary, this model is good at predicting good housing cost. The model's accuracy of is high at **0.9744**, the precision and F1 score are good enough to state that the model will be good at classifying good housing cost.  
+In summary, this model is good at predicting both good and bad housing cost. The model's accuracy of is high at **0.9915**, the precision and F1 score are good enough to state that the model will be good at classifying good housing cost.  
 
-**How does the model address the question or problem the team is solving.**  
+**How does the model address the question or problem the team is solving?**
+While there are many factors to consider when determining if it is time to move to a different state, the model performed well at predicting if the median cost of housing is too high for the median annual income of the 50 US states from 2010 through 2018. This is by no means the final determining factor in making such a decision, but it is analysis worth looking at.
 
 ## Analysis  
 ### Description of the analysis phase of the project  
@@ -312,11 +300,16 @@ The dashboard presents a data story that is logical and easy to follow for someo
 - Our dashboard is published on GitPages [Leaving California Dashboard]()  
 
 ## Presentation  
-The presentation can be found in [Google Slides](https://docs.google.com/presentation/d/14h7wNLqN1Vh8AVsPMiOpv18YU4jbhMqiKdh0yhPtdns/edit?usp=sharing)  
+The presentation can be found at [Google Slides](https://docs.google.com/presentation/d/14h7wNLqN1Vh8AVsPMiOpv18YU4jbhMqiKdh0yhPtdns/edit?usp=sharing)  
 
 ## Recommendation
-**Recommendation for future analysis**  
-**Anything the team would have done differently**  
+**Recommendation for future analysis**
+A linear regression was performed using the census data for 2010-2018 as well as the Zillow monthly data from April 1996 to January 2020. These regression equations were very different from each other, mainly due to the amount of information that was available in each dataset. Future analysis could include comparing the home values in the upcoming months to see if either model was close to reality. Another venue for future analysis would be to perform similar linear regressions for the other 49 US states to see if any of those models are an accurate representation of the home values in the near future. Even more interesting would be to see how the inclusion of market fluctuations in the Zillow data will hold up when predicting home values in 2030 and beyond.
+
+As for the RandomForest Classifier, it would be interesting to see if the model could accurately predict good and bad housing costs with data from the 2020 census.
+
+**Anything the team would have done differently**
+Our original plan was to gather data from 1980 through now, to be able to show the fluctuations in home value. We had also hoped to show that the cost of housing and annual income has increased, but not at the same rates and not at sustainable rates. However, the datasets that were available on the census.gov website only went as far back as 2010. If given more time, it might have been possible to get access to previous years and convert it into datasets that were similar to the 2010-2018 data.
 
 ## Limitations  
 The creating of the migration flow map requires registration for a [Mapbox](https://www.mapbox.com/) account to generate an API key to allow rendering of maps on the browser. Mapbox does provide a free tier on their [pricing]( https://www.mapbox.com/pricing/), however a credit card is required for the sign up.  
