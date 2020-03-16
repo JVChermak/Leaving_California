@@ -131,7 +131,7 @@ Once the datasets were combined for use in the machine learning models, we disco
 
 **What data can be removed?** We have begun to explore the data and have taken a look at null values. Next, we determine if the data can be removed. We consider: Are there string columns that we can’t use? Are there columns with excessive null data points? Was our decision to handle missing values to just remove them?  
 
-In the Migration Flow dataset, each row had a null data point to signify that no person migrated to the same state. For example, it doesn't make sense to say that a person migrated from Alabama to Alabama, so the value was null. Each of these values was changed to 0 for the purpose of the machine learning models.
+In the Migration Flow dataset, each row had a null data point to signify that no person migrated to the same state. For example, it doesn't make sense to say that a person migrated from Alabama to Alabama, so the value was null. Each of these values was changed to 0 for the purpose of the machine learning models. Also, because Puerto Rico was not placed into a Region, like the rest of the states, all rows for Puerto Rico were removed.
 
 Using the **duplicated().sum() method**, we also saw our dataset did **not** have duplicates.  
 
@@ -304,11 +304,13 @@ The presentation can be found at [Google Slides](https://docs.google.com/present
 
 ## Recommendation
 **Recommendation for future analysis**
+
 A linear regression was performed using the census data for 2010-2018 as well as the Zillow monthly data from April 1996 to January 2020. These regression equations were very different from each other, mainly due to the amount of information that was available in each dataset. Future analysis could include comparing the home values in the upcoming months to see if either model was close to reality. Another venue for future analysis would be to perform similar linear regressions for the other 49 US states to see if any of those models are an accurate representation of the home values in the near future. Even more interesting would be to see how the inclusion of market fluctuations in the Zillow data will hold up when predicting home values in 2030 and beyond.
 
 As for the RandomForest Classifier, it would be interesting to see if the model could accurately predict good and bad housing costs with data from the 2020 census.
 
 **Anything the team would have done differently**
+
 Our original plan was to gather data from 1980 through now, to be able to show the fluctuations in home value. We had also hoped to show that the cost of housing and annual income has increased, but not at the same rates and not at sustainable rates. However, the datasets that were available on the census.gov website only went as far back as 2010. If given more time, it might have been possible to get access to previous years and convert it into datasets that were similar to the 2010-2018 data.
 
 ## Limitations  
