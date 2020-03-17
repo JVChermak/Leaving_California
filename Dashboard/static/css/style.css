@@ -34,11 +34,13 @@ path:hover, circle:hover {
   cursor: default;
 }
 #info-box {
-  display: inline-block;
-  position: relative;
-  top: 0px;
-  left: 0px;
+  display: block;
+  position: absolute;
   z-index: 1;
+  width: 200px;
+  height: 200px;
+  left: 50%;
+  margin-left: -100px;
   background-color: #ffffff;
   color: #002868;
   border: 2px solid #BF0A30;
