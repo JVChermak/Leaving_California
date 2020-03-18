@@ -49,7 +49,7 @@ print(model.intercept_)
 # Predict the cost of housing in 2030
 m1 = model.coef_
 b1 = model.intercept_
-print(f'The predicted monthly cost of housing in 2030 is ${m1*2030 - b1} based on 2010-2018 census data.')
+print(f'The predicted monthly cost of housing in 2030 is ${m1*2030 + b1} based on 2010-2018 census data.')
 
 # Try a linear regression with only 2013 to 2018 data
 recent_ca_housing_df = ca_housing_df[ca_housing_df['Year'] >= 2013]
@@ -84,7 +84,7 @@ print(model.intercept_)
 # Predict Median Housing Cost in 2030
 m2 = model.coef_
 b2 = model.intercept_
-print(f'The predicted monthly cost of housing in 2030 is ${m2*2030 - b2} based on 2013-2018 census data.')
+print(f'The predicted monthly cost of housing in 2030 is ${m2*2030 + b2} based on 2013-2018 census data.')
 
 # Create Zillow CA DataFrame
 zillow_ca_df = pd.read_csv('Resources/zillow_data.csv')
