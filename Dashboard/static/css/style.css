@@ -21,7 +21,8 @@ body {
   width: 100%;
   height: 500px;
 }
-path:hover, circle:hover {
+/* #circle60:hover */
+#g5 > path:hover {
   stroke: #002868 !important;
   stroke-width:2px;
   stroke-linejoin: round;
