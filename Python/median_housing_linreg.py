@@ -49,7 +49,7 @@ print(model.intercept_)
 # Predict the cost of housing in 2030
 m1 = model.coef_
 b1 = model.intercept_
-print(f'The predicted monthly cost of housing in 2030 is ${m1*2030 - b1} based on 2010-2018 census data.')
+print(f'The predicted monthly cost of housing in 2030 is ${m1*2030 + b1} based on 2010-2018 census data.')
 
 # Try a linear regression with only 2013 to 2018 data
 recent_ca_housing_df = ca_housing_df[ca_housing_df['Year'] >= 2013]
@@ -84,7 +84,7 @@ print(model.intercept_)
 # Predict Median Housing Cost in 2030
 m2 = model.coef_
 b2 = model.intercept_
-print(f'The predicted monthly cost of housing in 2030 is ${m2*2030 - b2} based on 2013-2018 census data.')
+print(f'The predicted monthly cost of housing in 2030 is ${m2*2030 + b2} based on 2013-2018 census data.')
 
 # Create Zillow CA DataFrame
 zillow_ca_df = pd.read_csv('Resources/zillow_data.csv')
@@ -124,13 +124,10 @@ y_predz = z_model.predict(X3)
 # Visualize the regression line
 plt.scatter(X3,y3)
 plt.plot(X3, y_predz, color='red')
-plt.xlabel('Time')
+plt.xticks(np.arange(0, 286, step=24), np.arange(1996, 2020, step=2), rotation=45)
+plt.xlabel('Years')
 plt.ylabel('Typical Home Value (USD)')
 plt.title('California Typical Home Value from Zillow')
-plt.xlim(0,286)
-plt.ylim(150000,600000)
-plt.xticks(np.arange(0, 300, step=50))
-plt.yticks(np.arange(0,600000, step=50000))
 plt.savefig('img/median_home_value1.png')
 plt.show()
 

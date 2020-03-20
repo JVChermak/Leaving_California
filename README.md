@@ -1,4 +1,4 @@
-[![news](/pics/header.png)](https://www.youtube.com/embed/5GHBWSG_ifE)  
+[![news](/pics/header.png)](https://www.youtube.com/embed/5GHBWSG_ifE)
  
 #### Table of Contents  
 
@@ -32,6 +32,7 @@ Pricing can be seen on [laalmanac.com](http://www.laalmanac.com/economy/ec37.php
 - Based on the ["Best Practices"](https://www.mymoneyblog.com/4-different-rules-of-thumb-for-how-much-house-you-can-afford.html) in home buying, how much income would be needed to live in a median priced home in California at that time?  
 - What are the top 5 states Californians are moving to?  
 - How does California housing cost compare to those 5 states?  
+
 - Is it time to leave California?  
 
 **Description of the data exploration phase of the project**  
@@ -168,4 +169,3 @@ In an emergency we will inform our group through our group-text and reach out to
 The project roadmap and description of all the project deliverables can be found in [Deliverables.md](/Deliverables.md)  
 
 [Back to top](#table-of-contents)
-
