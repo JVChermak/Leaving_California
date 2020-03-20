@@ -51,10 +51,6 @@
             <div class="row" id="housing-analysis">
                 <div class="col-md-6">
                     <h3>California Housing Costs</h3>
-                    <p>The census.gov data for 2010-2018 shows the median cost of housing decrease during the recession, lasting through 2013. The cost of housing is then shown to increase steadily. This data is clearly not linear, and looking at the prediction from this linear regression shows that it might not be very accurate. The median monthly cost of housing is already very close to $2400, which would suggest that another large dip would need to happen first.</p>
-                    <p>A second attempt at a linear regression was performed with the median cost of housing from 2013 through 2018, in the hopes that it would be more accurate including the data that is more linear. The predicted montly housing cost seems more fitting with the current trend, but is also alarmingly large and hopefully not sustainable.</p>
-                    <p>The Zillow data shows the increase of typical home value through 2008, the decrease during the recession lasting until just before 2012, and then home value has continued to increase since 2012. A linear regression was tried here as well, in the hopes that the peaks and valleys would create a more reasonable predictor of future home values. The typical home value predicted for 2030 seems more likely than any of the other models.</p>
-                    <p>A regression line was done on the census.gov data to compare the median home value predictions with the Zillow data predictions. While the prediction for 2030 goes along with the current trend, the possibility that the median home value will be this large is the main contributing factor for possibly leaving the state.</p>
                     <table class="table table-striped">
                         <thead>
                             <tr>
@@ -81,6 +77,10 @@
                             </tr>
                         </tbody>
                     </table>
+                    <p>The census.gov data for 2010-2018 shows the median cost of housing decrease during the recession, lasting through 2013. The cost of housing is then shown to increase steadily. This data is clearly not linear, and looking at the prediction from this linear regression shows that it might not be very accurate. The median monthly cost of housing is already very close to $2400, which would suggest that another large dip would need to happen first.</p>
+                    <p>A second attempt at a linear regression was performed with the median cost of housing from 2013 through 2018, in the hopes that it would be more accurate including the data that is more linear. The predicted montly housing cost seems more fitting with the current trend, but is also alarmingly large and hopefully not sustainable.</p>
+                    <p>The Zillow data shows the increase of typical home value through 2008, the decrease during the recession lasting until just before 2012, and then home value has continued to increase since 2012. A linear regression was tried here as well, in the hopes that the peaks and valleys would create a more reasonable predictor of future home values. The typical home value predicted for 2030 seems more likely than any of the other models.</p>
+                    <p>A regression line was done on the census.gov data to compare the median home value predictions with the Zillow data predictions. While the prediction for 2030 goes along with the current trend, the possibility that the median home value will be this large is the main contributing factor for possibly leaving the state.</p>
                 </div>
                 <div class="col-md-6">
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -130,12 +130,44 @@
         </br>
         </br>
             <div class="row" id="migration-analysis">    
-                <div class="col-md-6">
-                    <h3>Migration Analysis</h3>
-                    <p>Here's a container for the Migration analysis.</p>
+                <div class="col-md-3">
+                    <h3>US Migration Analysis</h3>
+                    <p>Take a look at census data for each state by year to see housing costs, income, and migration changes.</p>
+                    <p>Leave: 0 = stay; 1 = leave</p>
+                    <form class="bg-dark">
+                        <p>Filter Search</p>
+                        <ul class="list-group bg-dark">
+                            <li class="list-group-item bg-dark">
+                                <label for="year">Enter Year</label>
+                                <input type="text" placeholder="2010" id="year" />
+                            </li>
+                            <li class="list-group-item bg-dark">
+                                <label for="state">Enter State</label>
+                                <input type="text" placeholder="California" id="state" />
+                            </li>
+                            <li class="list-group-item bg-dark">
+                                <button id="filter-btn" type="button" class="btn btn-dark">Filter Table</button>
+                            </li>
+                        </ul>
+                    </form>
                 </div>
-                <div class="col-md-6">
-                    <p>Need to add something here in terms of images or reports from Machine Learning task.</p>
+                <div class="col-md-9">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Year</th>
+                                <th>State</th>
+                                <th>Median Home Value (in thousands USD)</th>
+                                <th>Median Monthly Housing Cost (USD)</th>
+                                <th>Median Annual Income (in thousands USD)</th>
+                                <th>Population</th>
+                                <th>Net Population Change</th>
+                                <th>Net Migration</th>
+                                <th>Leave</th>
+                            </tr>
+                        </thead>
+                        <tbody id="migration-table"></tbody>
+                    </table>
                 </div>
             </div>
         </div>
@@ -149,11 +181,10 @@
 <!-- Our JavaScript for CA Migration Flow map-->
 <script type="text/javascript" src="static/js/cities.js"></script>
 <script type="text/javascript" src="static/js/logic.js"></script>
-<!-- Our JavaScript for Housing Cost map -->
-<!-- <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.15.0/d3.js"></script>
+<!-- Our JavaScript for Migration table -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
 <script src="static/js/data.js"></script>
-<script src="static/js/app.js"></script> -->
+<script src="static/js/app.js"></script>
 <!-- Optional JavaScript needed for carousel -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
