@@ -1,0 +1,58 @@
+Year,Region,NAME,value
+2016.0,3,Alabama,3045.0
+2016.0,4,Alaska,4206.0
+2016.0,4,Arizona,33757.0
+2016.0,3,Arkansas,4282.0
+2016.0,4,California,4282.0
+2016.0,4,Colorado,22540.0
+2016.0,1,Connecticut,2932.0
+2016.0,3,Delaware,1372.0
+2016.0,3,Florida,25354.0
+2016.0,3,Georgia,14663.0
+2016.0,4,Hawaii,14239.0
+2016.0,4,Idaho,3598.0
+2016.0,2,Illinois,21539.0
+2016.0,2,Indiana,7073.0
+2016.0,2,Iowa,3826.0
+2016.0,2,Kansas,3293.0
+2016.0,3,Kentucky,4206.0
+2016.0,3,Louisiana,4933.0
+2016.0,1,Maine,2513.0
+2016.0,3,Maryland,10637.0
+2016.0,1,Massachusetts,14062.0
+2016.0,2,Michigan,11442.0
+2016.0,2,Minnesota,10897.0
+2016.0,3,Mississippi,3174.0
+2016.0,2,Missouri,7580.0
+2016.0,4,Montana,1272.0
+2016.0,2,Nebraska,1876.0
+2016.0,4,Nevada,24656.0
+2016.0,1,New Hampshire,889.0
+2016.0,1,New Jersey,11988.0
+2016.0,4,New Mexico,8087.0
+2016.0,1,New York,40877.0
+2016.0,3,North Carolina,14268.0
+2016.0,2,North Dakota,2664.0
+2016.0,2,Ohio,9652.0
+2016.0,3,Oklahoma,6023.0
+2016.0,4,Oregon,18919.0
+2016.0,1,Pennsylvania,13090.0
+2016.0,1,Rhode Island,2265.0
+2016.0,3,South Carolina,5137.0
+2016.0,2,South Dakota,1333.0
+2016.0,3,Tennessee,6158.0
+2016.0,3,Texas,39109.0
+2016.0,4,Utah,11114.0
+2016.0,1,Vermont,400.0
+2016.0,3,Virginia,14348.0
+2016.0,4,Washington,27973.0
+2016.0,3,West Virginia,1150.0
+2016.0,2,Wisconsin,7354.0
+2016.0,4,Wyoming,2674.0
+2016.0,0,United States,2674.0
+2016.0,1,Northeast Region,2674.0
+2016.0,2,Midwest Region,2674.0
+2016.0,3,South Region,2674.0
+2016.0,4,West Region,2674.0
+2016.0,3,District of Columbia,2674.0
+2016.0,X,Puerto Rico,2674.0

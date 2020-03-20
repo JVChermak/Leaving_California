@@ -1,0 +1,58 @@
+Year,Region,NAME,value
+2010.0,3,Alabama,3364.0
+2010.0,4,Alaska,9579.0
+2010.0,4,Arizona,33854.0
+2010.0,3,Arkansas,4172.0
+2010.0,4,California,4172.0
+2010.0,4,Colorado,15662.0
+2010.0,1,Connecticut,4631.0
+2010.0,3,Delaware,643.0
+2010.0,3,Florida,20362.0
+2010.0,3,Georgia,8820.0
+2010.0,4,Hawaii,9528.0
+2010.0,4,Idaho,5719.0
+2010.0,2,Illinois,16482.0
+2010.0,2,Indiana,6550.0
+2010.0,2,Iowa,3163.0
+2010.0,2,Kansas,3857.0
+2010.0,3,Kentucky,3394.0
+2010.0,3,Louisiana,2989.0
+2010.0,1,Maine,1796.0
+2010.0,3,Maryland,10626.0
+2010.0,1,Massachusetts,11969.0
+2010.0,2,Michigan,10435.0
+2010.0,2,Minnesota,5095.0
+2010.0,3,Mississippi,2757.0
+2010.0,2,Missouri,6921.0
+2010.0,4,Montana,3009.0
+2010.0,2,Nebraska,3062.0
+2010.0,4,Nevada,27724.0
+2010.0,1,New Hampshire,1614.0
+2010.0,1,New Jersey,10108.0
+2010.0,4,New Mexico,4632.0
+2010.0,1,New York,20981.0
+2010.0,3,North Carolina,9593.0
+2010.0,2,North Dakota,392.0
+2010.0,2,Ohio,8170.0
+2010.0,3,Oklahoma,5708.0
+2010.0,4,Oregon,20913.0
+2010.0,1,Pennsylvania,9948.0
+2010.0,1,Rhode Island,526.0
+2010.0,3,South Carolina,5016.0
+2010.0,2,South Dakota,1604.0
+2010.0,3,Tennessee,4349.0
+2010.0,3,Texas,36582.0
+2010.0,4,Utah,10653.0
+2010.0,1,Vermont,525.0
+2010.0,3,Virginia,14232.0
+2010.0,4,Washington,30544.0
+2010.0,3,West Virginia,1446.0
+2010.0,2,Wisconsin,6031.0
+2010.0,4,Wyoming,1336.0
+2010.0,0,United States,1336.0
+2010.0,1,Northeast Region,1336.0
+2010.0,2,Midwest Region,1336.0
+2010.0,3,South Region,1336.0
+2010.0,4,West Region,1336.0
+2010.0,3,District of Columbia,1336.0
+2010.0,X,Puerto Rico,1336.0
