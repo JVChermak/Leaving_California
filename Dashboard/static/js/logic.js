@@ -10,7 +10,7 @@ cityData.forEach(function(city) {
 L.circleMarker(city.location, {
 	radius:city.migflow*0.001
 })
-.bindPopup("<h2>" + city.city + ", " + city.state + "</h2> <hr> <h3>Population " + city.population.toLocaleString() + "</h3> <hr> <h4>MigFlow " + city.migflow + "</h4>")
+.bindPopup("<h4>" + city.city + ", " + city.state + " <hr> Population " + city.population.toLocaleString() + "</h4> <hr> <h5>MigFlow " + city.migflow + "</h5>")
   .addTo(map);
 });
 
