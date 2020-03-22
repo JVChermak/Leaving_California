@@ -1,12 +1,8 @@
 // Add console.log to check to see if our code is working.
 console.log("working");
 
-// Create the map object with a center and zoom level.
-//let map = L.map('mapid').setView([40.7, -94.5], 14);// We create the tile layer that will be the background of our map.
-
 // We create the tile layer that will be the background of our map.
 let satelliteStreets =  L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/satellite-streets-v11/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-//let streets = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/{z}/{x}/{y}?access_token={accessToken}', {
 attribution: 'Map data © <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery (c) <a href="https://www.mapbox.com/">Mapbox</a>',
 	maxZoom: 18,
 	accessToken: API_KEY
@@ -14,7 +10,6 @@ attribution: 'Map data © <a href="https://www.openstreetmap.org/">OpenStreetMap
 
 // We create the tile layer that will be the background of our map.
 let streets =  L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-//let streets = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/{z}/{x}/{y}?access_token={accessToken}', {
 attribution: 'Map data © <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery (c) <a href="https://www.mapbox.com/">Mapbox</a>',
 	maxZoom: 18,
 	accessToken: API_KEY
@@ -28,7 +23,7 @@ let baseMaps = {
 
 // Load the data into layers by year
 //2010
-data_2010 = cities3.filter(state => state.year == 2010)
+data_2010 = cities.filter(state => state.year == 2010)
 console.log(data_2010)
 markers_2010 = []
 
@@ -37,13 +32,13 @@ data_2010.forEach(marker => {
   console.log(migflow*0.01)
   markers_2010.push(L.circleMarker(marker.location, {
     radius: Number(migflow) * 0.001
-  }).bindPopup("<h2>" + marker.state + "</h2> <hr> <h3>Population " + marker.population.toLocaleString() + "</h3> <hr> <h4>MigFlow " + marker.migflow + "</h4>"));
+  }).bindPopup("<h4>" + marker.state + ", " + marker.year + " <hr>Population " + marker.population.toLocaleString() + "</h4> <hr> <h5>MigFlow " + marker.migflow + "</h5>"));
 })
 console.log(markers_2010)
 layer_group_2010 = L.layerGroup(markers_2010)
 
 //2011
-data_2011 = cities3.filter(state => state.year == 2011)
+data_2011 = cities.filter(state => state.year == 2011)
 console.log(data_2011)
 markers_2011 = []
 
@@ -52,13 +47,13 @@ data_2011.forEach(marker => {
   console.log(migflow*0.01)
   markers_2011.push(L.circleMarker(marker.location, {
     radius: Number(migflow) * 0.001
-  }).bindPopup("<h2>" + marker.state + "</h2> <hr> <h3>Population " + marker.population.toLocaleString() + "</h3> <hr> <h4>MigFlow " + marker.migflow + "</h4>"));
+  }).bindPopup("<h4>" + marker.state + ", " + marker.year + " <hr>Population " + marker.population.toLocaleString() + "</h4> <hr> <h5>MigFlow " + marker.migflow + "</h5>"));
 })
 console.log(markers_2011)
 layer_group_2011 = L.layerGroup(markers_2011)
 
 //2012
-data_2012 = cities3.filter(state => state.year == 2012)
+data_2012 = cities.filter(state => state.year == 2012)
 console.log(data_2012)
 markers_2012 = []
 
@@ -67,13 +62,13 @@ data_2012.forEach(marker => {
   console.log(migflow*0.01)
   markers_2012.push(L.circleMarker(marker.location, {
     radius: Number(migflow) * 0.001
-  }).bindPopup("<h2>" + marker.state + "</h2> <hr> <h3>Population " + marker.population.toLocaleString() + "</h3> <hr> <h4>MigFlow " + marker.migflow + "</h4>"));
+  }).bindPopup("<h4>" + marker.state + ", " + marker.year + " <hr>Population " + marker.population.toLocaleString() + "</h4> <hr> <h5>MigFlow " + marker.migflow + "</h5>"));
 })
 console.log(markers_2012)
 layer_group_2012 = L.layerGroup(markers_2012)
 
 // 2013
-data_2013 = cities3.filter(state => state.year == 2013)
+data_2013 = cities.filter(state => state.year == 2013)
 console.log(data_2013)
 markers_2013 = []
 
@@ -82,13 +77,13 @@ data_2013.forEach(marker => {
   console.log(migflow*0.01)
   markers_2013.push(L.circleMarker(marker.location, {
     radius: Number(migflow) * 0.001
-  }).bindPopup("<h2>" + marker.state + "</h2> <hr> <h3>Population " + marker.population.toLocaleString() + "</h3> <hr> <h4>MigFlow " + marker.migflow + "</h4>"));
+  }).bindPopup("<h4>" + marker.state + ", " + marker.year + " <hr>Population " + marker.population.toLocaleString() + "</h4> <hr> <h5>MigFlow " + marker.migflow + "</h5>"));
 })
 console.log(markers_2013)
 layer_group_2013 = L.layerGroup(markers_2013)
 
 //2014
-data_2014 = cities3.filter(state => state.year == 2014)
+data_2014 = cities.filter(state => state.year == 2014)
 console.log(data_2014)
 markers_2014 = []
 
@@ -97,13 +92,13 @@ data_2014.forEach(marker => {
   console.log(migflow*0.01)
   markers_2014.push(L.circleMarker(marker.location, {
     radius: Number(migflow) * 0.001
-  }).bindPopup("<h2>" + marker.state + "</h2> <hr> <h3>Population " + marker.population.toLocaleString() + "</h3> <hr> <h4>MigFlow " + marker.migflow + "</h4>"));
+  }).bindPopup("<h4>" + marker.state + ", " + marker.year + " <hr>Population " + marker.population.toLocaleString() + "</h4> <hr> <h5>MigFlow " + marker.migflow + "</h5>"));
 })
 console.log(markers_2014)
 layer_group_2014 = L.layerGroup(markers_2014)
 
 //2015
-data_2015 = cities3.filter(state => state.year == 2015)
+data_2015 = cities.filter(state => state.year == 2015)
 console.log(data_2015)
 markers_2015 = []
 
@@ -112,13 +107,13 @@ data_2015.forEach(marker => {
   console.log(migflow*0.01)
   markers_2015.push(L.circleMarker(marker.location, {
     radius: Number(migflow) * 0.001
-  }).bindPopup("<h2>" + marker.state + "</h2> <hr> <h3>Population " + marker.population.toLocaleString() + "</h3> <hr> <h4>MigFlow " + marker.migflow + "</h4>"));
+  }).bindPopup("<h4>" + marker.state + ", " + marker.year + " <hr>Population " + marker.population.toLocaleString() + "</h4> <hr> <h5>MigFlow " + marker.migflow + "</h5>"));
 })
 console.log(markers_2015)
 layer_group_2015 = L.layerGroup(markers_2015)
 
 //2016
-data_2016 = cities3.filter(state => state.year == 2016)
+data_2016 = cities.filter(state => state.year == 2016)
 console.log(data_2016)
 markers_2016 = []
 
@@ -127,13 +122,13 @@ data_2016.forEach(marker => {
   console.log(migflow*0.01)
   markers_2016.push(L.circleMarker(marker.location, {
     radius: Number(migflow) * 0.001
-  }).bindPopup("<h2>" + marker.state + "</h2> <hr> <h3>Population " + marker.population.toLocaleString() + "</h3> <hr> <h4>MigFlow " + marker.migflow + "</h4>"));
+  }).bindPopup("<h4>" + marker.state + ", " + marker.year + " <hr>Population " + marker.population.toLocaleString() + "</h4> <hr> <h5>MigFlow " + marker.migflow + "</h5>"));
 })
 console.log(markers_2016)
 layer_group_2016 = L.layerGroup(markers_2016)
 
 //2017
-data_2017 = cities3.filter(state => state.year == 2017)
+data_2017 = cities.filter(state => state.year == 2017)
 console.log(data_2017)
 markers_2017 = []
 
@@ -142,13 +137,13 @@ data_2017.forEach(marker => {
   console.log(migflow*0.01)
   markers_2017.push(L.circleMarker(marker.location, {
     radius: Number(migflow) * 0.001
-  }).bindPopup("<h2>" + marker.state + "</h2> <hr> <h3>Population " + marker.population.toLocaleString() + "</h3> <hr> <h4>MigFlow " + marker.migflow + "</h4>"));
+  }).bindPopup("<h4>" + marker.state + ", " + marker.year + " <hr>Population " + marker.population.toLocaleString() + "</h4> <hr> <h5>MigFlow " + marker.migflow + "</h5>"));
 })
 console.log(markers_2017)
 layer_group_2017 = L.layerGroup(markers_2017)
 
 //2018
-data_2018 = cities3.filter(state => state.year == 2018)
+data_2018 = cities.filter(state => state.year == 2018)
 console.log(data_2018)
 markers_2018 = []
 
@@ -157,7 +152,7 @@ data_2018.forEach(marker => {
   console.log(migflow*0.01)
   markers_2018.push(L.circleMarker(marker.location, {
     radius: Number(migflow) * 0.001
-  }).bindPopup("<h2>" + marker.state + "</h2> <hr> <h3>Population " + marker.population.toLocaleString() + "</h3> <hr> <h4>MigFlow " + marker.migflow + "</h4>"));
+  }).bindPopup("<h4>" + marker.state + ", " + marker.year + " <hr>Population " + marker.population.toLocaleString() + "</h4> <hr> <h5>MigFlow " + marker.migflow + "</h5>"));
 })
 console.log(markers_2018)
 layer_group_2018 = L.layerGroup(markers_2018)
@@ -190,7 +185,7 @@ let overlays= {
 // Create the map object with center, zoom level and default layer.
 let map = L.map('mapid', {
   center: [39.5, -98.5],
-  zoom: 3,
+  zoom: 4,
   layers: [satelliteStreets]
 })
 
