@@ -26,25 +26,23 @@ Pricing can be seen on [laalmanac.com](http://www.laalmanac.com/economy/ec37.php
 - Median Home Price
 - Median Household Income  
 
-**Questions the team answers with the data**  
-- What are the California median household prices in California expected to be in the next five years?  
+**Questions the team answers with the data**    
 - What are the California median household prices in California expected to be in the next ten years?  
 - Based on the ["Best Practices"](https://www.mymoneyblog.com/4-different-rules-of-thumb-for-how-much-house-you-can-afford.html) in home buying, how much income would be needed to live in a median priced home in California at that time?  
 - What are the top 5 states Californians are moving to?  
 - How does California housing cost compare to those 5 states?  
-
 - Is it time to leave California?  
 
 **Description of the data exploration phase of the project**  
 Data selection entails making good choices about which data will be used. We encountered a problem of scale/granularity; so we increased the scale to make the comparison at a state level. Our first concept involved extracting data for our individual counties to compare against each other, then choose one county from another state to compare against our indivual results. Despite previously having access to more information, we discovered that the data available through the [data.census.gov](https://data.census.gov) website only contained data sets from 2010 to 2018. After filtering what was needed for our analysis, the amount of data remaining was not enough to provide a meaningful analysis. To overcome this obstacle we decided to broaden our analysis from four counties to all states in the U.S.. California is, now, our targeted data to compare against all the other states. This decision allowed us to determine which data will be used.  
 
 **Description of the analysis phase of the project**  
-With the vast amount of data we used for our analysis, we devoloped a "user friendly" dashboard to diplay all the information. The dashboard presents a data story that is logical and easy to follow for someone unfamiliar with the topic. It includes a Leaflet.js Application Programming Interface (API) to populate a geographical map with migration data from [www2.census.gov](https://www2.census.gov). Each states migration flow is visually represented by a circle, where a higher migration population has a larger diameter. In addition, each state has a popup marker that, when clicked, shows the population and migration for that state. We, also, have an interactive HTML map. A drop down table allows the user to select a year. The map is then updated with the year selected data, each state, when hovered on, shows the median housing cost for that state.
+With the vast amount of data we used for our analysis, we devoloped a "user friendly" dashboard to diplay all the information. The dashboard presents a data story that is logical and easy to follow for someone unfamiliar with the topic. It includes a Leaflet.js Application Programming Interface (API) to populate a geographical map with migration data from [www2.census.gov](https://www2.census.gov). Each states migration flow is visually represented by a circle, where a higher migration population has a larger diameter. In addition, each state has a popup marker that, when clicked, shows the population and migration for that state. We, also, have an interactive HTML map. A drop down table allows the user to select a year. The map is then updated with the year selected data, each state, when hovered on, shows the median housing cost for that state. Finally, the user can take a closer look at the census data for each state by year to see housing cost, income, and migration changes in a table that is filtered by the users input.
 <br/>  
 
-<img align="left" width="250" src="/pics/migflow2_map2018.png"><br/>
-<img align="left" width="250" src="/pics/migflow2_map2018.png"><br/>
-<img align="left" width="250" src="/pics/cost_map.png"><br/>
+<img align="left" width="250" src="/pics/MigFlow_map.png"><br/>
+<img align="left" width="250" src="/pics/Housing_map.png"><br/>
+<img align="left" width="250" src="/pics/Machine_Learning.png"><br/>
 <br/>
 <br/>
 <br/>
@@ -53,7 +51,7 @@ With the vast amount of data we used for our analysis, we devoloped a "user frie
 <br/>  
 
 ## Resources  
-- **Software:** Jupyter Notebook, PostGreSQL,   
+- **Software:** Jupyter Notebook, VS Code, PostGreSQL   
 - **Languages:** Python, JSON, SQL  
 - **Dependencies:** Pandas, Matplotlib, SciPy, NumPy, Scikit-learn, hvplot, Plotly express  
 - **Algorithms:** K-means, Random Forest Classifier, LinReg 
@@ -121,7 +119,36 @@ The dashboard presents a data story that is logical and easy to follow for someo
 ### Presentation  
 The presentation can be found at [Google Slides](https://docs.google.com/presentation/d/e/2PACX-1vRPRYl5EeTXoGJxJPMSvwe9Y6fMAqUzO8Dy-muM66Io3Hx2QggDBBcRvqVJm9GlAwUasHoYhnPj7QyV/pub?start=false&loop=false&delayms=10000)  
 
-### Result of analysis
+### Result of analysis  
+**What are the California median household prices in California expected to be in the next ten years?**  
+The predicted median home value in **2030** is **$678226.74** based on April 1996 to January 2020 Zillow data.
+
+**Based on the ["Best Practices"](https://www.mymoneyblog.com/4-different-rules-of-thumb-for-how-much-house-you-can-afford.html) in home buying, how much income would be needed to live in a median priced home in California at that time?**  
+**$226,075.58**  
+A single income would need to make an annual salary of **$226,075.58** or full time hourly rate of **$108.70**
+A double income would need to make annual salaries of **$113,037.79**  or full time hourly rates of **$54.35**
+
+**What are the top 5 states Californians are moving to?**  
+From **2010** to **2018** the top **5** sates Californians were moving to listed in descending order:
+- Texas  
+- Arizona  
+- Washington  
+- New York  
+- Nevada
+
+**How does California housing cost compare to those 5 states?**  
+The average median home value from **2010** to **2018**:  
+- California - **$439,834** 
+- Texas - **$167,823**  
+- Arizona - **$200,089**  
+- Washington - **$297,645**  
+- New York - **$313,178**  
+- Nevada - **$211,667**
+
+**Is it time to leave California?**   
+When comparing the average median home value from **2010** to **2018**, it is easy to see why Californians are, mostly, migrating to these states.  
+
+A regression line was done on the census.gov data to compare the median home value predictions with the Zillow data predictions. While the prediction for 2030 goes along with the current trend, the possibility that the median home value will be this large is the main contributing factor in determining, **it is time to leave California**.
 
 ### Recommendation
 **Recommendation for future analysis**
