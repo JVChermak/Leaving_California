@@ -31,6 +31,7 @@ data_2010.forEach(marker => {
   let migflow = parseInt(marker.migflow.replace(/,/g, ''))
   console.log(migflow*0.01)
   markers_2010.push(L.circleMarker(marker.location, {
+    color: '#e41a1c',
     radius: Number(migflow) * 0.001
   }).bindPopup("<h4>" + marker.state + ", " + marker.year + " <hr>Population " + marker.population.toLocaleString() + "</h4> <hr> <h5>MigFlow " + marker.migflow + "</h5>"));
 })
@@ -46,6 +47,7 @@ data_2011.forEach(marker => {
   let migflow = parseInt(marker.migflow.replace(/,/g, ''))
   console.log(migflow*0.01)
   markers_2011.push(L.circleMarker(marker.location, {
+    color: '#377eb8',
     radius: Number(migflow) * 0.001
   }).bindPopup("<h4>" + marker.state + ", " + marker.year + " <hr>Population " + marker.population.toLocaleString() + "</h4> <hr> <h5>MigFlow " + marker.migflow + "</h5>"));
 })
@@ -61,6 +63,7 @@ data_2012.forEach(marker => {
   let migflow = parseInt(marker.migflow.replace(/,/g, ''))
   console.log(migflow*0.01)
   markers_2012.push(L.circleMarker(marker.location, {
+    color: '#4daf4a',
     radius: Number(migflow) * 0.001
   }).bindPopup("<h4>" + marker.state + ", " + marker.year + " <hr>Population " + marker.population.toLocaleString() + "</h4> <hr> <h5>MigFlow " + marker.migflow + "</h5>"));
 })
@@ -76,6 +79,7 @@ data_2013.forEach(marker => {
   let migflow = parseInt(marker.migflow.replace(/,/g, ''))
   console.log(migflow*0.01)
   markers_2013.push(L.circleMarker(marker.location, {
+    color: '#984ea3',
     radius: Number(migflow) * 0.001
   }).bindPopup("<h4>" + marker.state + ", " + marker.year + " <hr>Population " + marker.population.toLocaleString() + "</h4> <hr> <h5>MigFlow " + marker.migflow + "</h5>"));
 })
@@ -91,6 +95,7 @@ data_2014.forEach(marker => {
   let migflow = parseInt(marker.migflow.replace(/,/g, ''))
   console.log(migflow*0.01)
   markers_2014.push(L.circleMarker(marker.location, {
+    color: '#ff7f00',
     radius: Number(migflow) * 0.001
   }).bindPopup("<h4>" + marker.state + ", " + marker.year + " <hr>Population " + marker.population.toLocaleString() + "</h4> <hr> <h5>MigFlow " + marker.migflow + "</h5>"));
 })
@@ -106,6 +111,7 @@ data_2015.forEach(marker => {
   let migflow = parseInt(marker.migflow.replace(/,/g, ''))
   console.log(migflow*0.01)
   markers_2015.push(L.circleMarker(marker.location, {
+    color: '#ffff33',
     radius: Number(migflow) * 0.001
   }).bindPopup("<h4>" + marker.state + ", " + marker.year + " <hr>Population " + marker.population.toLocaleString() + "</h4> <hr> <h5>MigFlow " + marker.migflow + "</h5>"));
 })
@@ -121,6 +127,7 @@ data_2016.forEach(marker => {
   let migflow = parseInt(marker.migflow.replace(/,/g, ''))
   console.log(migflow*0.01)
   markers_2016.push(L.circleMarker(marker.location, {
+    color: '#a65628',
     radius: Number(migflow) * 0.001
   }).bindPopup("<h4>" + marker.state + ", " + marker.year + " <hr>Population " + marker.population.toLocaleString() + "</h4> <hr> <h5>MigFlow " + marker.migflow + "</h5>"));
 })
@@ -136,6 +143,7 @@ data_2017.forEach(marker => {
   let migflow = parseInt(marker.migflow.replace(/,/g, ''))
   console.log(migflow*0.01)
   markers_2017.push(L.circleMarker(marker.location, {
+    color: '#f781bf',
     radius: Number(migflow) * 0.001
   }).bindPopup("<h4>" + marker.state + ", " + marker.year + " <hr>Population " + marker.population.toLocaleString() + "</h4> <hr> <h5>MigFlow " + marker.migflow + "</h5>"));
 })
@@ -151,6 +159,7 @@ data_2018.forEach(marker => {
   let migflow = parseInt(marker.migflow.replace(/,/g, ''))
   console.log(migflow*0.01)
   markers_2018.push(L.circleMarker(marker.location, {
+    color: '#999999',
     radius: Number(migflow) * 0.001
   }).bindPopup("<h4>" + marker.state + ", " + marker.year + " <hr>Population " + marker.population.toLocaleString() + "</h4> <hr> <h5>MigFlow " + marker.migflow + "</h5>"));
 })

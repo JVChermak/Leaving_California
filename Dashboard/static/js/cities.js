@@ -324,7 +324,7 @@ let cities = [
   },
   { 
     year: "2010",
-    location: [38.899348700000004, -77.0145665],
+    location: [47.61, -122.33],
     state: "Washington",
     population: "6,742,830",
     migflow: "30,544"
@@ -674,7 +674,7 @@ let cities = [
     },
     { 
       year: "2011",
-      location: [38.899348700000004, -77.0145665],
+      location: [47.61, -122.33],
       state: "Washington",
       population: "6,826,627",
       migflow: "36,481"
@@ -977,7 +977,7 @@ let cities = [
     migflow: "15,625"
   },
   { year: "2012",
-    location: [38.899348700000004, -77.0145665],
+    location: [47.61, -122.33],
     state: "Washington",
     population: "6,897,058",
     migflow: "34,569"
@@ -1324,7 +1324,7 @@ let cities = [
     },
     { 
       year: "2013",
-      location: [38.899348700000004, -77.0145665],
+      location: [47.61, -122.33],
       state: "Washington",
       population: "6,963,985",
       migflow: "37,246"
@@ -1674,7 +1674,7 @@ let cities = [
     },
     { 
       year: "2014",
-      location: [38.899348700000004, -77.0145665],
+      location: [47.61, -122.33],
       state: "Washington",
       population: "7,054,655",
       migflow: "32,837"
@@ -1977,7 +1977,7 @@ let cities = [
     migflow: "15,009"
   },
   { year: "2015",
-    location: [38.899348700000004, -77.0145665],
+    location: [47.61, -122.33],
     state: "Washington",
     population: "7,163,657",
     migflow: "33,131"
@@ -2324,7 +2324,7 @@ let cities = [
     },
     { 
       year: "2016",
-      location: [38.899348700000004, -77.0145665],
+      location: [47.61, -122.33],
       state: "Washington",
       population: "7,294,771",
       migflow: "27,973"
@@ -2627,7 +2627,7 @@ let cities = [
     migflow: "21,162"
   },
   { year: "2017",
-    location: [38.899348700000004, -77.0145665],
+    location: [47.61, -122.33],
     state: "Washington",
     population: "7,423,362",
     migflow: "33,143"
@@ -2927,7 +2927,7 @@ let cities = [
   migflow: "17,725"
 },
 { year: "2018",
-  location: [38.899348700000004, -77.0145665],
+  location: [47.61, -122.33],
   state: "Washington",
   population: "7,523,869",
   migflow: "38,007"

@@ -16,9 +16,9 @@
     />
     <link rel="stylesheet" href="static/css/style.css">
 </head>
-<body class="bg-dark">
+<body class="bg-light">
     <div class="wrapper">
-        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+        <nav class="navbar navbar-light bg-light navbar-expand-lg">
             <a class="navbar-brand" href="index.html">Refresh</a>
         </nav>
         <div class="jumbotron">
@@ -28,7 +28,7 @@
             <div class="row" id="migration-map">
                 <div class="col-md-3">
                     <h3>California Migration Map</h3>
-                    <p>This map shows the migration flow out of California for 2010 to 2018. Select a year to show markers for states which had more than 10,000 people migrate. Select a circle to learn more.</p>   
+                    <p>This map shows the migration flow out of California for 2010 to 2018. Select a year to show markers for each state. Select a circle to learn how many people migrated to that state.</p>   
                 </div>
                 <div class="col-md-9">
                     <!-- The div that holds our Cali_MigFlow map -->
@@ -159,19 +159,19 @@
                     <h3>US Migration Table</h3>
                     <p>Take a look at census data for each state by year to see housing costs, income, and migration changes. Filter to find your state or a state of interest.</p>
                     <p>Leave: 0 = stay; 1 = leave</p>
-                    <form class="bg-dark">
+                    <form class="bg-light">
                         <p>Filter Search</p>
-                        <ul class="list-group bg-dark">
-                            <li class="list-group-item bg-dark">
+                        <ul class="list-group bg-light">
+                            <li class="list-group-item bg-light">
                                 <label for="year">Enter Year</label>
                                 <input type="text" placeholder="2010" id="year" />
                             </li>
-                            <li class="list-group-item bg-dark">
+                            <li class="list-group-item bg-light">
                                 <label for="state">Enter State</label>
                                 <input type="text" placeholder="California" id="state" />
                             </li>
-                            <li class="list-group-item bg-dark">
-                                <button id="filter-btn" type="button" class="btn btn-dark">Filter Table</button>
+                            <li class="list-group-item bg-light">
+                                <button id="filter-btn" type="button" class="btn btn-light">Filter Table</button>
                             </li>
                         </ul>
                     </form>
