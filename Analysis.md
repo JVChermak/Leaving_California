@@ -78,7 +78,9 @@ We maintained the entire dataset for our HTML map to support further analysis.
 <br/>  
 
 ### HTML Table  
-Our table allows the user to take a look at census data for each state by year to see housing costs, income, and migration changes. It filters by year and/or state.  
+
+
+With the dataset that was available, it became necessary to widen the scope of our original plan to include all 50 states. One way to visualize the results of our model was to create a table of the data that was used by our RandomForest Classifier. The table allows the user to take a look at census data for each state by year to see housing costs, income, migration changes, and the target column of whether to stay or leave. While the full table is shown upon load, the user can filter by year and/or state to take a closer look at a home state or a state of interest.  
 
 <img align="left" width="900" src="/pics/Machine_Learning.png"><br/>
 <br/>
@@ -108,20 +110,23 @@ Our table allows the user to take a look at census data for each state by year t
 <br/> 
 
 ### Plots  
-<img align="right" width="200" src="/pics/median_housing1.png"><br/>The census.gov data for 2010-2018 shows the median cost of housing decrease during the recession, lasting through 2013. The cost of housing is then shown to increase steadily. This data is clearly not linear, and looking at the prediction from this linear regression shows that it might not be very accurate. The median monthly cost of housing is already very close to $2400, which would suggest that another large dip would need to happen first.  
+<img align="right" width="200" src="/pics/median_housing1.png"><br/>The census.gov data for 2010-2018 shows the median cost of housing decrease during the recession, lasting through 2013. The cost of housing is then shown to increase steadily. This data is clearly not linear, but a linear regression was attempted knowing that it might not be very accurate. A prediction of monthly housing cost was run for 2030, but the value of $2,410.56 was very close to the 2018 median monthly cost of $2,345.  
 
-<img align="right" width="200" src="/pics/median_housing2.png"><br/>A second attempt at a linear regression was performed with the median cost of housing from 2013 through 2018, in the hopes that it would be more accurate including the data that is more linear. The predicted montly housing cost seems more fitting with the current trend, but is also alarmingly large and hopefully not sustainable.  
+<img align="right" width="200" src="/pics/median_housing2.png"><br/>Because of this discrepancy, a second attempt at a linear regression was performed with the median cost of housing from 2013 through 2018, in the hopes that it would be more accurate including the data that is more linear. To compare, the monthly cost of housing was predicted for 2030 to be $3,044.50. This montly housing cost seems more fitting with the current trend, but is also alarmingly large and hopefully not sustainable.  
 
-<img align="right" width="200" src="/pics/median_home_value1.png"><br/>The Zillow data shows the increase of typical home value through 2008, the decrease during the recession lasting until just before 2012, and then home value has continued to increase since 2012. A linear regression was tried here as well, in the hopes that the peaks and valleys would create a more reasonable predictor of future home values. The typical home value predicted for 2030 seems more likely than any of the other models.  
+<img align="right" width="200" src="/pics/median_home_value1.png"><br/>Once we were able to locate the Zillow data with monthly values for typical home value, a linear regression was run in the hopes that more data points that included spikes and dips would be a better model. The data shows the increase of typical home value through 2008, the decrease during the recession lasting until just before 2012, and then home value has continued to increase since 2012. The typical home value predicted for 2030 of $678,226 seems more likely than any of the other models.  
 
-<img align="right" width="200" src="/pics/median_home_value2.png"><br/>A regression line was done on the census.gov data to compare the median home value predictions with the Zillow data predictions. While the prediction for 2030 goes along with the current trend, the possibility that the median home value will be this large is the main contributing factor for possibly leaving the state.  
+<img align="right" width="200" src="/pics/median_home_value2.png"><br/>To be able to compare with the available Zillow data, a regression line was done on the census.gov median home value data. The census data for median home value does not include as many fluctuations as the Zillow data, so the prediction for 2030 goes along with the current trend. The predicted median home value is $865,060 and we believe that the possibility that the median home value will be this large is the main contributing factor for leaving the state.  
 <br/>
 <br/>
-**Looking beyond California US Migration Analysis, the census.gov website has migration flow data for each year starting in 2010. The information includes population, how many lived in the same or a different state the previous year, and the number moving between states.**  
+### Looking beyond California
+#### US Migration Analysis
+
+The census.gov website has migration flow data for each year starting in 2010. The information includes population, how many lived in the same or a different state the previous year, and the number moving between states.  
 
 <img align="right" width="250" src="/pics/state_migration_kmeans_scatter.png"><br/>After removing the state to state information, a K-means machine learning model was run to see if there was any interesting grouping going on with the migration flows. The scatterplot shows that there are 5 distinct classes for the 50 states between 2010 and 2018, based on population and the number of people who lived in a different state the previous year.  
 
-<img align="right" width="250" src="/pics/overall_migration_pca_scatter.png"><br/>Further analysis was done with the state to state information, as well as all information using the PCA method to reduce features. While all showed groupings of some sort, it is not known to us what these groupings suggest. Given more time, it would be interesting to find out if there are any significant features that contribute to the groupings.  
+<img align="right" width="250" src="/pics/state_to_state_pca_scatter.png"><br/>Further analysis was done with the state to state information, as well as all information using the PCA method to reduce features. While all showed groupings of some sort, it is not known to us what these groupings suggest. Given more time, it would be interesting to find out if there are any significant features that contribute to the groupings.  
 
 [Back to Top](#analysis)  
 [Back to README.md](/README.md)
