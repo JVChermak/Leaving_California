@@ -75,7 +75,7 @@ The migration datasets were, also, done similarly. The most predominant change w
 **Description of feature engineering and the feature selection, including the team’s decision-making process**  
 Machine learning is the use of statistical algorithms to perform tasks such as learning from data patterns and making predictions. There are many different models; a mathematical representation of something that happens in the real world. Machine learning can be divided into three learning categories: supervised, unsupervised, and deep.  
 
-We decided to do **supervised learning**, which deals with labeled data. This supervised learning will be used to predict, based on data from the census, whether it's time to leave California.
+We decided to do **supervised learning**, which deals with labeled data. This supervised learning was used to predict, based on data from the census, whether it's time to leave California. Because the original dataset does not contain a classifying or target column, a formula was used to categorize each row of data, which is a state for a given year. This categorization was added as a "Leave" column with "0" meaning that we suggest staying in your state and "1" meaning that we suggest you leave.
 
 Additional **unsupervised learning** was done with the migration data to see if there was some unexpected groupings or patterns. Because of the number of columns that displayed state to state migrations, two methods were used to try to reduce the number of features. In one instance, the information was converted into a tall dataframe using the melt() method. For comparison's sake, another test was run with all columns reduced to three features using PCA, or principal component analysis.
 
@@ -97,7 +97,7 @@ Benefits to us using a random forest model are both output and feature selection
 
 ## Changes In Model Choice  
 **Explanation of changes in model choice**
-The main change was the feature engineering done to prepare for the RandomForest model. The original data does not have a target column, so one was created using a calculation of our choosing. The original calculation of monthly housing cost to monthly income ratio less than 28% only produced four "positive" outcomes all in 2010, so the model performed very well at predicting when to stay (precision 0.98, recall 0.99), but not reliably in terms of when to leave (precision 0.67, recall 0.50). Due to the number of people that have migrated from their states from 2016 on, the calculation was changed to the use of home value being less than three times the annual income. This produced a much more reasonable target column with 33 "positive" outcomes and allowed the model to train and test better.
+The main change was the feature engineering done to prepare for the RandomForest model. The original calculation of monthly housing cost to monthly income ratio less than 28% only produced four "positive" outcomes all in 2010, so the model performed very well at predicting when to stay (precision 0.98, recall 0.99), but not reliably in terms of when to leave (precision 0.67, recall 0.50). Due to the number of people that have migrated from their states from 2016 on, the calculation was changed to the use of home value being less than three times the annual income. This produced a much more reasonable target column with 33 "positive" outcomes and allowed the model to train and test better.
 
 ## How the Model Was Trained  
 **Description of how the model was trained (or retrained if the team used an existing model)**  
