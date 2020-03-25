@@ -104,10 +104,10 @@ Click [here](/Database%20Integration.md) for details on:
 
 ### Analysis  
 Click [here](/Analysis.md) for details on:
-- Jupyter Notebook Analysis  
-- Machine Learning Model Analysis  
-- Database Integration Analysis  
-- Dashboard Visual Analysis  
+- Leaflet Map
+- HTML Map
+- HTML Table
+- Plots  
 
 ### Dashboard
 The dashboard presents a data story that is logical and easy to follow for someone unfamiliar with the topic. It includes the following:
