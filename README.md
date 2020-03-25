@@ -124,8 +124,7 @@ The presentation can be found at [Google Slides](https://docs.google.com/present
 The predicted median home value in **2030** is **$678226.74** based on April 1996 to January 2020 Zillow data.
 
 **Based on the ["Best Practices"](https://www.mymoneyblog.com/4-different-rules-of-thumb-for-how-much-house-you-can-afford.html) in home buying, how much income would be needed to live in a median priced home in California at that time?**  
-**$226,075.58**  
-A single income would need to make an annual salary of **$226,075.58** or full-time hourly rate of **$108.70**
+A single income would need to make an annual salary of **$226,075.58** or full-time hourly rate of **$108.70**  
 A double income would need to make annual salaries of **$113,037.79**  or full-time hourly rates of **$54.35**
 
 **What are the top 5 states Californians are moving to?**  
