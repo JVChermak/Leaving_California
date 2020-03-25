@@ -110,11 +110,11 @@ Click [here](/Analysis.md) for details on:
 - Plots  
 
 ### Dashboard
-The dashboard presents a data story that is logical and easy to follow for someone unfamiliar with the topic. It includes the following:
+Click [here](http://leavingcabucket.s3-website.us-east-2.amazonaws.com/) for details on:
 - Images from the initial analysis
 - Data (images and report) from the machine learning task
 - Interactive elements
-- Our dashboard is published on GitPages [Leaving California Dashboard]()  
+- Our dashboard is published on AWS [Leaving California Dashboard](http://leavingcabucket.s3-website.us-east-2.amazonaws.com/)  
 
 ### Presentation  
 The presentation can be found at [Google Slides](https://docs.google.com/presentation/d/e/2PACX-1vRPRYl5EeTXoGJxJPMSvwe9Y6fMAqUzO8Dy-muM66Io3Hx2QggDBBcRvqVJm9GlAwUasHoYhnPj7QyV/pub?start=false&loop=false&delayms=10000)  
