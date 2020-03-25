@@ -18,7 +18,7 @@ Multiple tables were generated to store static data as the project evolved. Tabl
 
 * Example - California Migration to All Other States (2010 -2018)
 
-![](https://github.com/JVChermak/Leaving_California/blob/master/Circle_Analysis/allYear_table.png)
+![](https://github.com/JVChermak/Leaving_California/blob/master/pics/allYear_table.png)
 
 
 ## Joins  
@@ -26,7 +26,7 @@ A left join using the database is performed on selected states from 2017 and 201
 
 * Left Join Table (On 2017 by selected States)
 
-![](https://github.com/JVChermak/Leaving_California/blob/master/Circle_Analysis/leftjoin_table.png)
+![](https://github.com/JVChermak/Leaving_California/blob/master/pics/leftjoin_table.png)
 
 ## Connection string  
 A connection string using SQLAlchemy connects our python to our PostgreSQL.  
