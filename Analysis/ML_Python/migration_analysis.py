@@ -3,7 +3,7 @@ import pandas as pd
 import hvplot.pandas
 
 # Load data
-file_path = "Resources/Master_CleanData_Migration.csv"
+file_path = "../../Data/Master_CleanData_Migration.csv"
 df_full_migration = pd.read_csv(file_path)
 
 # Remove Puerto Rico because has no region

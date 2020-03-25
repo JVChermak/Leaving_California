@@ -7,7 +7,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import confusion_matrix, accuracy_score, classification_report
 
 # Loading data
-file_path = Path('Resources/US_data_combined.csv')
+file_path = Path('../../Data/Resources/US_data_combined.csv')
 df_us_data = pd.read_csv(file_path)
 
 # Drop columns with multiple NaN values

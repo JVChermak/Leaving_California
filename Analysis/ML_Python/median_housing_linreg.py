@@ -6,7 +6,7 @@ from datetime import datetime
 import numpy as np
 
 # Read data
-df_census = pd.read_csv('Resources/Census.csv')
+df_census = pd.read_csv('../../Data/Resources/Census.csv')
 
 # Filter data to just get information about California
 ca_housing_df = df_census[df_census['State'] == 'California']
@@ -39,7 +39,7 @@ plt.plot(X, y_pred, color='red')
 plt.xlabel('Years')
 plt.ylabel('Median Monthly Housing Cost (USD)')
 plt.title('California Monthly Median Housing Costs')
-plt.savefig('img/median_housing1.png')
+plt.savefig('../../pics/median_housing1.png')
 plt.show()
 
 # Find the equation for the regression line
@@ -74,7 +74,7 @@ plt.plot(X2, y_pred2, color='red')
 plt.xlabel('Years')
 plt.ylabel('Median Monthly Housing Cost (USD)')
 plt.title('California Median Monthly Housing Cost (USD)')
-plt.savefig('img/median_housing2.png')
+plt.savefig('../../pics/median_housing2.png')
 plt.show()
 
 # Find the equation for the regression line
@@ -87,7 +87,7 @@ b2 = model.intercept_
 print(f'The predicted monthly cost of housing in 2030 is ${m2*2030 + b2} based on 2013-2018 census data.')
 
 # Create Zillow CA DataFrame
-zillow_ca_df = pd.read_csv('Resources/zillow_data.csv')
+zillow_ca_df = pd.read_csv('../../Data/Resources/zillow_data.csv')
 
 # Remove RegionID and SizeRank columns
 zillow_ca_df.drop(columns=['RegionID', 'SizeRank'], inplace=True)
@@ -128,7 +128,7 @@ plt.xticks(np.arange(0, 286, step=24), np.arange(1996, 2020, step=2), rotation=4
 plt.xlabel('Years')
 plt.ylabel('Typical Home Value (USD)')
 plt.title('California Typical Home Value from Zillow')
-plt.savefig('img/median_home_value1.png')
+plt.savefig('../../pics/median_home_value1.png')
 plt.show()
 
 # Find the equation for the regression line
@@ -158,7 +158,7 @@ plt.plot(X4, y_pred4, color='red')
 plt.xlabel('Years')
 plt.ylabel('Median Home Value')
 plt.title('California Median Home Value from Census')
-plt.savefig('img/median_home_value2.png')
+plt.savefig('../../pics/median_home_value2.png')
 plt.show()
 
 # Find the equation for the regression line
