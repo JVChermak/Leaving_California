@@ -13,9 +13,9 @@
 
 ## Project Overview  
 ### **Reason the topic was selected**  
-**There are many articles written about Californian’s  leaving due to the high cost of living. There are many news clips, like the ones we chose for our video embedded in our header. The reason this topic was selected, with our group living in California, it's personal. We live throughout the state, Southern California to Northern California, with a wide range of interests, backgrounds, experiences. We find commonality in the abiding weight in questioning, "Is it time to leave California?"**   
+**There are many articles written about Californian’s leaving due to the high cost of living. There are many news clips, like the ones we chose for our video embedded in our header. The reason this topic was selected, with our group living in California, it's personal. We live throughout the state, Southern California to Northern California, with a wide range of interests, backgrounds, experiences. We find commonality in the abiding weight in questioning, "Is it time to leave California?"**   
 
-As a broad generalization, most people can afford to purchase a house worth about **3X** their **total (gross) annual income**, assuming a **20% down** payment and a moderate amount of other long-term debts, such as car or student loan payments. This best practice can be found at [mymoneyblog.com](https://www.mymoneyblog.com/4-different-rules-of-thumb-for-how-much-house-you-can-afford.html). As there are many similar "Best Practices" in home buying, We would like to keep a consistency throughout the analysis and use this one, three times total annual income. The consistency will make the analysis meaningful. 
+As a broad generalization, most people can afford to purchase a house worth about **3X** their **total (gross) annual income**, assuming a **20% down** payment and a moderate amount of other long-term debts, such as car or student loan payments. This best practice can be found at [mymoneyblog.com](https://www.mymoneyblog.com/4-different-rules-of-thumb-for-how-much-house-you-can-afford.html). As there are many similar "Best Practices" in home buying, we would like to keep a consistency throughout the analysis and use this one, three times total annual income. The consistency will make the analysis meaningful. 
 
 With the best practice in mind and the median price of homes currently, as of 02/13/20, listed in San Bernardino County is **$350,000**, according to [zillow.com](https://www.zillow.com/san-bernardino-county-ca/home-values/), a single gross income of **$116,666.67** would be needed to purchase a **median price** home in **San Bernardino County**.  
 
@@ -27,17 +27,17 @@ Pricing can be seen on [laalmanac.com](http://www.laalmanac.com/economy/ec37.php
 - Median Household Income  
 
 **Questions the team answers with the data**    
-- What are the California median household prices in California expected to be in the next ten years?  
+- What is the California median household prices in California expected to be in the next ten years?  
 - Based on the ["Best Practices"](https://www.mymoneyblog.com/4-different-rules-of-thumb-for-how-much-house-you-can-afford.html) in home buying, how much income would be needed to live in a median priced home in California at that time?  
 - What are the top 5 states Californians are moving to?  
 - How does California housing cost compare to those 5 states?  
 - Is it time to leave California?  
 
 **Description of the data exploration phase of the project**  
-Data selection entails making good choices about which data will be used. We encountered a problem of scale/granularity; so we increased the scale to make the comparison at a state level. Our first concept involved extracting data for our individual counties to compare against each other, then choose one county from another state to compare against our indivual results. Despite previously having access to more information, we discovered that the data available through the [data.census.gov](https://data.census.gov) website only contained data sets from 2010 to 2018. After filtering what was needed for our analysis, the amount of data remaining was not enough to provide a meaningful analysis. To overcome this obstacle we decided to broaden our analysis from four counties to all states in the U.S.. California is, now, our targeted data to compare against all the other states. This decision allowed us to determine which data will be used.  
+Data selection entails making good choices about which data will be used. We encountered a problem of scale; so, we increased the scale to make the comparison at a state level. Our first concept involved extracting data for our individual counties to compare against each other, then choose one county from another state to compare against our individual results. Despite previously having access to more information, we discovered that the data available through the [data.census.gov](https://data.census.gov) website only contained data sets from 2010 to 2018. After filtering what was needed for our analysis, the amount of data remaining was not enough to provide a meaningful analysis. To overcome this obstacle we decided to broaden our analysis from four counties to all states in the United States. California is, now, our targeted data to compare against all the other states. This decision allowed us to determine which data will be used.  
 
 **Description of the analysis phase of the project**  
-With the vast amount of data we used for our analysis, we devoloped a "user friendly" dashboard to diplay all the information. The dashboard presents a data story that is logical and easy to follow for someone unfamiliar with the topic. It includes a Leaflet.js Application Programming Interface (API) to populate a geographical map with migration data from [www2.census.gov](https://www2.census.gov). Each states migration flow is visually represented by a circle, where a higher migration population has a larger diameter. In addition, each state has a popup marker that, when clicked, shows the population and migration for that state. We, also, have an interactive HTML map. A drop down table allows the user to select a year. The map is then updated with the year selected data, each state, when hovered on, shows the median housing cost for that state. Finally, the user can take a closer look at the census data for each state by year to see housing cost, income, and migration changes in a table that is filtered by the users input.
+With the vast amount of data, we used for our analysis, we developed a "user friendly" dashboard to display all the information. The dashboard presents a data story that is logical and easy to follow for someone unfamiliar with the topic. It includes a Leaflet.js Application Programming Interface (API) to populate a geographical map with migration data from [www2.census.gov](https://www2.census.gov). Each states migration flow is visually represented by a circle, where a higher migration population has a larger diameter. In addition, each state has a popup marker that, when clicked, shows the population and migration for that state. We, also, have an interactive HTML map. A drop-down table allows the user to select a year. The map is then updated with the year selected data, each state, when hovered on, shows the median housing cost for that state. Finally, the user can take a closer look at the census data for each state by year to see housing cost, income, and migration changes in a table that is filtered by the users input.
 <br/>  
 
 <img align="left" width="250" src="/pics/MigFlow_map.png"><br/>
@@ -51,10 +51,10 @@ With the vast amount of data we used for our analysis, we devoloped a "user frie
 <br/>  
 
 ## Resources  
-- **Software:** Jupyter Notebook, VS Code, PostGreSQL   
+- **Software:** Jupyter Notebook, VS Code, PostgreSQL, quickdatabasediagrams.com   
 - **Languages:** Python, JSON, SQL  
 - **Dependencies:** Pandas, Matplotlib, SciPy, NumPy, Scikit-learn, hvplot, Plotly express  
-- **Algorithms:** K-means, Random Forest Classifier, LinReg 
+- **Algorithms:** K-means, Random Forest Classifier, Linear Regression  
 - **Data Source:** csv resources for our analysis were downloaded from [data.census.gov](https://data.census.gov), [www2.census.gov](https://www2.census.gov), and [zillow.com](https://www.zillow.com/)  
 
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;[2010_data](https://data.census.gov/cedsci/table?g=0100000US.04000.001&y=2010&tid=ACSST1Y2010.S2506&t=Financial%20Characteristics%3AHousing%3AHousing%20Value%20and%20Purchase%20Price%3AIncome%20%28Households,%20Families,%20Individuals%29%3AIncome%20and%20Earnings%3AIncome%20and%20Poverty%3AMortgage%20Costs&vintage=2018&hidePreview=true&moe=false)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;[migration_2010](https://www2.census.gov/programs-surveys/demo/tables/geographic-mobility/2010/state-to-state-migration/state_to_state_migrations_table_2010.xls)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;[population_data](https://www2.census.gov/programs-surveys/popest/datasets/2010-2019/national/totals/nst-est2019-alldata.csv?#)  
@@ -89,7 +89,7 @@ Click [here](/Machine%20Learning.md) for details on:
 - Model Choice  
 - Model Limitations  
 - Model Benefits  
-- Changes In Model's Choice  
+- Changes in Model's Choice  
 - How the Model Was Trained  
 - Model’s Confusion Matrix  
 
@@ -125,8 +125,8 @@ The predicted median home value in **2030** is **$678226.74** based on April 199
 
 **Based on the ["Best Practices"](https://www.mymoneyblog.com/4-different-rules-of-thumb-for-how-much-house-you-can-afford.html) in home buying, how much income would be needed to live in a median priced home in California at that time?**  
 **$226,075.58**  
-A single income would need to make an annual salary of **$226,075.58** or full time hourly rate of **$108.70**
-A double income would need to make annual salaries of **$113,037.79**  or full time hourly rates of **$54.35**
+A single income would need to make an annual salary of **$226,075.58** or full-time hourly rate of **$108.70**
+A double income would need to make annual salaries of **$113,037.79**  or full-time hourly rates of **$54.35**
 
 **What are the top 5 states Californians are moving to?**  
 From **2010** to **2018** the top **5** sates Californians were moving to listed in descending order:
@@ -165,7 +165,7 @@ Our original plan was to gather data from 1980 through now, to be able to show t
 The creating of the migration flow map requires registration for a [Mapbox](https://www.mapbox.com/) account to generate an API key to allow rendering of maps on the browser. Mapbox does provide a free tier on their [pricing]( https://www.mapbox.com/pricing/), however a credit card is required for the sign up.  
 
 ## Sources  
-**DBD created at : [quickdatabasediagrams.com](https://www.quickdatabasediagrams.com/)**  
+**DBD created at: [quickdatabasediagrams.com](https://www.quickdatabasediagrams.com/)**  
 
 **README.md video** was created with clips from: 
 - [California faces housing 'crisis' amid extremely high rents](https://www.youtube.com/watch?v=kJH4wSW_X5A)
@@ -177,11 +177,6 @@ The creating of the migration flow map requires registration for a [Mapbox](http
 - [zerohedge.com](https://www.zerohedge.com/political/conservative-californians-leaving-droves-america-first-law-and-order-red-states)  
 
 **Interactive map created with** [websitebeaver.com](https://websitebeaver.com/how-to-make-an-interactive-and-responsive-svg-map-of-us-states-capitals) **| Permissible** [License](https://github.com/WebsiteBeaver/interactive-and-responsive-svg-map-of-us-states-capitals/blob/master/LICENSE)  
-
-**Code pictures** were screenshots of:  
-- [.ipynb]()  
-- [.ipynb]()  
-- [.ipynb]()  
 
 ## Communication Protocols  
 It is important to establish a communication protocol. We created direct messages for only team members in Slack at [final-project-jas](https://ucbdatasept19.slack.com/archives/CTXNA5K5G) and exchanged cell phone numbers where we created a group-text.  
