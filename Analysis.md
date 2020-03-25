@@ -82,7 +82,7 @@ We maintained the entire dataset for our HTML map to support further analysis.
 
 With the dataset that was available, it became necessary to widen the scope of our original plan to include all 50 states. One way to visualize the results of our model was to create a table of the data that was used by our RandomForest Classifier. The table allows the user to take a look at census data for each state by year to see housing costs, income, migration changes, and the target column of whether to stay or leave. While the full table is shown upon load, the user can filter by year and/or state to take a closer look at a home state or a state of interest.  
 
-<img align="left" width="900" src="/pics/Machine_Learning.png"><br/>
+<img align="left" width="900" src="/pics/dynamic_migration_table.png"><br/>
 <br/>
 <br/>
 <br/>
