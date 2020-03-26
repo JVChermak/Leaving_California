@@ -145,7 +145,10 @@ Support is the number of actual occurrences of the class in the specified datase
 In summary, this model is good at predicting both good and bad housing cost. The model's accuracy of is high at **0.9915**, the precision and F1 score are good enough to state that the model will be good at classifying good housing cost.  
 
 **How does the model address the question or problem the team is solving?**
-While there are many factors to consider when determining if it is time to move to a different state, the model performed well at predicting if the median cost of housing is too high for the median annual income of the 50 US states from 2010 through 2018. This is by no means the final determining factor in making such a decision, but it is analysis worth looking at.  
+While there are many factors to consider when determining if it is time to move to a different state, the model performed well at predicting if the median cost of housing is too high for the median annual income of the 50 US states from 2010 through 2018. This is by no means the final determining factor in making such a decision, but it is analysis worth looking at.
+
+## **Future Statistical Analysis**
+Although a linear regression was run for housing costs over time, a more interesting statistical analysis could potentially be done using an ANOVA test. For a one-way ANOVA, the independent categorical variable could be the state, and the dependent continuous variable could be the Net Population Change. For a two-way ANOVA, the independent categorical variable would still be the state, but the dependent continuous variables could be Median Home Value and Net Population Change. Given enough time, it might be interesting to run an ANOVA on several combinations of the continuous data variables.
 
 [Back to Top](#machine-learning-model)  
 [Back to README.md](/README.md)
